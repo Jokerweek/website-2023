@@ -2,7 +2,7 @@ import { atom } from "recoil";
 
 const mobile = atom({
   key: "mobile",
-  default: false,
+  default: window.innerWidth < window.innerHeight,
 });
 
 export default mobile;
