@@ -9,12 +9,10 @@ export default function App() {
   useMobile();
 
   return (
-    <RecoilRoot>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
-    </RecoilRoot>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
