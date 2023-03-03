@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { RecoilRoot } from "recoil";
 import "./App.css";
 import { useMobile } from "./hooks";
-import { Home } from "./pages";
+import { Home, Landing } from "./pages";
 
 export default function App() {
   useMobile();
@@ -11,7 +10,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Landing />} />
+        <Route exact path="/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
