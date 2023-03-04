@@ -1,4 +1,3 @@
-import { height } from "@mui/system";
 import { useRecoilValue } from "recoil";
 import mobile from "../recoil/mobile";
 
@@ -114,7 +113,7 @@ function Mobile() {
       >
         expo (kaart)
       </div>
-      <div
+      <a
         style={{
           position: "absolute",
           top: "114vw",
@@ -124,9 +123,10 @@ function Mobile() {
           width: "8vw",
           height: "5vw",
         }}
+        href="/weekmenu"
       >
         weekmenu
-      </div>
+      </a>
       <div
         style={{
           position: "absolute",

@@ -1,28 +1,29 @@
-import { Button } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { Button, IconButton } from "@mui/material";
 import { useRecoilValue } from "recoil";
 import mobile from "../recoil/mobile";
+import "./doorklik.css";
 
 function Mobile() {
   return (
-    <div style={{ width: "100%", overflowX: "hidden" }}>
-      <img
+    <div
+      className="bg"
+      style={{ width: "100%", height: "100vh", overflowX: "hidden" }}
+    >
+      {/* <img
         src="/images/bg/JW-Regard-Landing-Page_MOBILE.jpg"
         alt="logo"
         style={{ width: "100vw" }}
-      />
-      <Button
-        variant="contained"
-        style={{
-          position: "absolute",
-          top: "10vw",
-          width: "150px",
-          left: "calc(50vw - 75px)",
-          fontFamily: "'Gentium Book Basic', serif",
-        }}
-        href="/home"
-      >
-        Ga door
-      </Button>
+      /> */}
+      <IconButton href="/home" aria-label="delete" className="back">
+        <ArrowBackIcon />
+      </IconButton>
+      <div className="title">
+        <h1>
+          <u>W</u>eekmen<u className="titleColor">u</u>
+          <br /> maandag
+        </h1>
+      </div>
     </div>
   );
 }
@@ -51,12 +52,12 @@ function Desktop() {
   );
 }
 
-export default function Landing() {
+export default function Weekmenu() {
   const mobileState = useRecoilValue(mobile);
 
   if (mobileState) {
     return <Mobile />;
   } else {
-    return <Desktop />;
+    return <Mobile />;
   }
 }

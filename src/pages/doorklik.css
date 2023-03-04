@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  justify-content: center;
+  top: 50px;
+  position: absolute;
+  width: 100vw;
+}
+
+.title h1 {
+  text-align: center;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 4rem;
+}
+
+.title h1 u {
+  color: var(--main-red);
+  text-decoration: none;
+}
+
+.back {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.bg {
+  background-image: url("../../public/images/bg/JW-Regard-Landing-Page_MOBILE.jpg");
+  background-size: cover;
+}

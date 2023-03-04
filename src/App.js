@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { useMobile } from "./hooks";
-import { Home, Landing } from "./pages";
+import { Home, Landing, Weekmenu } from "./pages";
 
 export default function App() {
   useMobile();
@@ -12,6 +12,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route exact path="/home" element={<Home />} />
+        <Route exact path="/weekmenu" element={<Weekmenu />} />
       </Routes>
     </BrowserRouter>
   );
