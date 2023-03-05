@@ -1,4 +1,5 @@
 import { useRecoilValue } from "recoil";
+import Footer from "../components/Footer";
 import mobile from "../recoil/mobile";
 
 function Mobile() {
@@ -119,8 +120,9 @@ function Mobile() {
           top: "114vw",
           left: "48vw",
           border: "1px solid blue",
-          color: "blue",
-          width: "8vw",
+          color: "white",
+          background: "red",
+          width: "20vw",
           height: "5vw",
         }}
         href="/weekmenu"
@@ -176,8 +178,18 @@ export default function Home() {
   const mobileState = useRecoilValue(mobile);
 
   if (mobileState) {
-    return <Mobile />;
+    return (
+      <>
+        <Mobile />
+        <Footer />
+      </>
+    );
   } else {
-    return <Desktop />;
+    return (
+      <>
+        <Desktop />
+        <Footer />
+      </>
+    );
   }
 }

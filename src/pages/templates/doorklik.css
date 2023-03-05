@@ -1,0 +1,20 @@
+.background .topImage{
+    width: 300px;
+    max-width: 70vw;
+    margin: 2rem;
+}
+
+.background .bottomImage{
+    width: 100px;
+    max-width: 70vw;
+    margin: 2rem;
+}
+
+.background p {
+    width: 600px;
+    max-width: 80vw;
+    text-align: left;
+    font-family: "myHelvetica";
+    font-size: 1rem;
+    line-height: 1.2rem;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RecoilRoot } from "recoil";
 import App from "./App";
+import "./fonts/Helvetica-Bold-Font.ttf";
+import "./fonts/Thick Thinks.otf";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 

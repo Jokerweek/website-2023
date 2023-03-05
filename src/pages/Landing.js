@@ -1,62 +1,21 @@
-import { Button } from "@mui/material";
-import { useRecoilValue } from "recoil";
-import mobile from "../recoil/mobile";
-
-function Mobile() {
-  return (
-    <div style={{ width: "100%", overflowX: "hidden" }}>
-      <img
-        src="/images/bg/JW-Regard-Landing-Page_MOBILE.jpg"
-        alt="logo"
-        style={{ width: "100vw" }}
-      />
-      <Button
-        variant="contained"
-        style={{
-          position: "absolute",
-          top: "10vw",
-          width: "150px",
-          left: "calc(50vw - 75px)",
-          fontFamily: "'Gentium Book Basic', serif",
-        }}
-        href="/home"
-      >
-        Ga door
-      </Button>
-    </div>
-  );
-}
-
-function Desktop() {
-  return (
-    <div style={{}}>
-      <img
-        src="/images/bg/JW-Regard-Landing-Page_PC.jpg"
-        alt="logo"
-        style={{ position: "absolute", width: "100vw" }}
-      />
-      <Button
-        variant="contained"
-        style={{
-          position: "absolute",
-          top: "10vw",
-          width: "150px",
-          left: "calc(50vw - 75px)",
-        }}
-        href="/home"
-      >
-        Ga door
-      </Button>
-    </div>
-  );
-}
-
 export default function Landing() {
-  const mobileState = useRecoilValue(mobile);
-
-  if (mobileState) {
-    return <Mobile />;
-  } else {
-    return <Desktop />;
-  }
+  return (
+    <div
+      className="background"
+      style={{ height: "100vh", justifyContent: "space-evenly" }}
+    >
+      <a
+        variant="contained"
+        className="title button"
+        href="/home"
+      >
+        Ga door
+      </a>
+      <img
+        src="images/logo/Spel-officieel-Transparant.png"
+        alt="logo"
+        style={{ width: "300px", maxWidth: "80vw" }}
+      />
+    </div>
+  );
 }
