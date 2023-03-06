@@ -50,11 +50,6 @@ function Desktop(props) {
               {props.title}
             </u>
             <p>{props.children}</p>
-            <img
-              src="images/logo/Spel-officieel-Transparant.png"
-              alt="logo"
-              className="bottomImage"
-            />
           </div>
           <div>
             <img
@@ -64,6 +59,11 @@ function Desktop(props) {
             />
           </div>
         </div>
+        <img
+          src="images/logo/Spel-officieel-Transparant.png"
+          alt="logo"
+          className="bottomImage"
+        />
       </div>
       <Footer />
     </>

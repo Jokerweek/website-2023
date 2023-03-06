@@ -10,7 +10,7 @@ function Mobile() {
         alt="logo"
         style={{ width: "100vw" }}
       />
-      <div
+      <a
         style={{
           position: "absolute",
           top: "67vw",
@@ -20,10 +20,11 @@ function Mobile() {
           width: "17vw",
           height: "20vw",
         }}
+        href="/home"
       >
         radio
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "101vw",
@@ -33,10 +34,11 @@ function Mobile() {
           width: "23vw",
           height: "13vw",
         }}
+        href="/huisregels"
       >
         huisregels
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "117vw",
@@ -46,10 +48,11 @@ function Mobile() {
           width: "13vw",
           height: "13vw",
         }}
+        href="/sponsors"
       >
         sponsors
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "137vw",
@@ -59,10 +62,11 @@ function Mobile() {
           width: "18vw",
           height: "20vw",
         }}
+        href="/kalender"
       >
         kalender
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "152vw",
@@ -72,10 +76,11 @@ function Mobile() {
           width: "24vw",
           height: "24vw",
         }}
+        href="/randactiviteiten"
       >
         randactiviteiten
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "100vw",
@@ -85,10 +90,11 @@ function Mobile() {
           width: "7vw",
           height: "5vw",
         }}
+        href="/home"
       >
         bib
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "104vw",
@@ -98,10 +104,11 @@ function Mobile() {
           width: "8vw",
           height: "5vw",
         }}
+        href="/opdracht"
       >
         opdracht
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "110vw",
@@ -111,9 +118,10 @@ function Mobile() {
           width: "7vw",
           height: "5vw",
         }}
+        href="/expo"
       >
         expo (kaart)
-      </div>
+      </a>
       <a
         style={{
           position: "absolute",
@@ -129,7 +137,7 @@ function Mobile() {
       >
         weekmenu
       </a>
-      <div
+      <a
         style={{
           position: "absolute",
           top: "124vw",
@@ -139,9 +147,10 @@ function Mobile() {
           width: "25vw",
           height: "15vw",
         }}
+        href="/lezingen"
       >
         lezingen
-      </div>
+      </a>
     </div>
   );
 }
@@ -154,7 +163,7 @@ function Desktop() {
         alt="logo"
         style={{ width: "100vw" }}
       />
-      <div
+      <a
         style={{
           position: "absolute",
           top: "1.2vw",
@@ -164,10 +173,11 @@ function Desktop() {
           width: "11vw",
           height: "14vw",
         }}
+        href="/home"
       >
         radio
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "44vw",
@@ -177,10 +187,11 @@ function Desktop() {
           width: "10vw",
           height: "12vw",
         }}
+        href="/huisregels"
       >
         huisregels
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "32.5vw",
@@ -190,10 +201,11 @@ function Desktop() {
           width: "12vw",
           height: "12vw",
         }}
+        href="/sponsors"
       >
         sponsors
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "51vw",
@@ -203,10 +215,11 @@ function Desktop() {
           width: "18vw",
           height: "5vw",
         }}
+        href="/home"
       >
         technische hulp
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "25vw",
@@ -216,10 +229,11 @@ function Desktop() {
           width: "15vw",
           height: "10vw",
         }}
+        href="/kalender"
       >
         kalender
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "19vw",
@@ -229,10 +243,11 @@ function Desktop() {
           width: "12vw",
           height: "12vw",
         }}
+        href="/randactiviteiten"
       >
         randactiviteiten
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "23vw",
@@ -242,10 +257,11 @@ function Desktop() {
           width: "6vw",
           height: "5vw",
         }}
+        href="/home"
       >
         bib
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "26vw",
@@ -255,10 +271,11 @@ function Desktop() {
           width: "6vw",
           height: "5vw",
         }}
+        href="/opdracht"
       >
         opdracht
-      </div>
-      <div
+      </a>
+      <a
         style={{
           position: "absolute",
           top: "30vw",
@@ -268,9 +285,10 @@ function Desktop() {
           width: "6vw",
           height: "5vw",
         }}
+        href="/expo"
       >
         expo (kaart)
-      </div>
+      </a>
       <a
         style={{
           position: "absolute",
@@ -286,7 +304,7 @@ function Desktop() {
       >
         weekmenu
       </a>
-      <div
+      <a
         style={{
           position: "absolute",
           top: "39vw",
@@ -296,9 +314,10 @@ function Desktop() {
           width: "20vw",
           height: "10vw",
         }}
+        href="/lezingen"
       >
         lezingen
-      </div>
+      </a>
     </div>
   );
 }
@@ -308,7 +327,19 @@ export default function Home() {
   if (mobileState) {
     return (
       <>
-        <Mobile />
+        <div
+          style={{
+            width: "100%",
+            height: "100vh",
+            display: "flex",
+            alignItems: "center",
+            overflow: "hidden",
+          }}
+        >
+          <div style={{ position: "relative", transform: "translateY(-15vw)" }}>
+            <Mobile />
+          </div>
+        </div>
         <Footer />
       </>
     );

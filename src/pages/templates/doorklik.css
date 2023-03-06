@@ -22,7 +22,7 @@
 .doorklikContainerDesktop {
   display: flex;
   justify-content: center;
-  padding: 4rem 2rem 2rem 1rem;
+  padding: 4rem 2rem 0rem 2rem;
 }
 
 .doorklikContainerMobile {

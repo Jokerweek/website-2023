@@ -1,6 +1,6 @@
 import Doorklik from "./templates/Doorklik";
 
-export default function Mobile() {
+export default function Weekmenu() {
   return (
     <Doorklik title="Weekmenu" image="/images/test_1.png">
       <h2>MAANDAG</h2>

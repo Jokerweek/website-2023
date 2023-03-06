@@ -12,7 +12,22 @@ export default function Footer() {
               <a href="/weekmenu">Weekmenu</a>
             </li>
             <li>
-              <a href="/">Kalender</a>
+              <a href="/kalender">Kalender</a>
+            </li>
+            <li>
+              <a href="/huisregels">Huisregels</a>
+            </li>
+            <li>
+              <a href="/sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a href="/lezingen">Lezingen</a>
+            </li>
+            <li>
+              <a href="/opdracht">Opdracht</a>
+            </li>
+            <li>
+              <a href="/expo">Expo kaart</a>
             </li>
             <li>
               <a href="/">Countdown</a>
@@ -30,7 +45,7 @@ export default function Footer() {
           <ul>
             <h3>Contact</h3>
             <li>
-              <a href="/">
+              <a href="mailto:philippe.soubrier+jokerweek@gmail.com">
                 Probleem <br /> melden
               </a>
             </li>
