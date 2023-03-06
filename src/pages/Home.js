@@ -148,32 +148,160 @@ function Mobile() {
 
 function Desktop() {
   return (
-    <div style={{ width: "100%", overflowX: "hidden" }}>
-      <img src="/images/bgDesktop.jpg" alt="logo" style={{ width: "100vw" }} />
+    <div style={{ width: "100%", overflowX: "hidden", position: "relative" }}>
       <img
-        src="https://funtrafic.imgix.net/catalog/product/M/G/MGA_Entertainment_20544722_2.jpg?auto=format"
+        src="/images/bg/JW-Regard-Website-v4-PC.jpg"
         alt="logo"
+        style={{ width: "100vw" }}
+      />
+      <div
         style={{
           position: "absolute",
-          top: "45vw",
-          left: "10vw",
-          width: "20vw",
+          top: "1.2vw",
+          left: "46vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "11vw",
+          height: "14vw",
         }}
-      />
-      <img
-        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494654_sd.jpg"
-        alt="logo"
+      >
+        radio
+      </div>
+      <div
         style={{
           position: "absolute",
-          top: "20vw",
-          left: "70vw",
-          width: "20vw",
+          top: "44vw",
+          left: "20vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "10vw",
+          height: "12vw",
         }}
-      />
+      >
+        huisregels
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "32.5vw",
+          left: "78vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "12vw",
+          height: "12vw",
+        }}
+      >
+        sponsors
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "51vw",
+          left: "79vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "18vw",
+          height: "5vw",
+        }}
+      >
+        technische hulp
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "25vw",
+          left: "23vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "15vw",
+          height: "10vw",
+        }}
+      >
+        kalender
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "19vw",
+          left: "83vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "12vw",
+          height: "12vw",
+        }}
+      >
+        randactiviteiten
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "23vw",
+          left: "39vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "6vw",
+          height: "5vw",
+        }}
+      >
+        bib
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "26vw",
+          left: "47vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "6vw",
+          height: "5vw",
+        }}
+      >
+        opdracht
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "30vw",
+          left: "39vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "6vw",
+          height: "5vw",
+        }}
+      >
+        expo (kaart)
+      </div>
+      <a
+        style={{
+          position: "absolute",
+          top: "33vw",
+          left: "47vw",
+          border: "1px solid blue",
+          color: "white",
+          background: "red",
+          width: "10vw",
+          height: "5vw",
+        }}
+        href="/weekmenu"
+      >
+        weekmenu
+      </a>
+      <div
+        style={{
+          position: "absolute",
+          top: "39vw",
+          left: "33vw",
+          border: "1px solid blue",
+          color: "blue",
+          width: "20vw",
+          height: "10vw",
+        }}
+      >
+        lezingen
+      </div>
     </div>
   );
 }
-
 export default function Home() {
   const mobileState = useRecoilValue(mobile);
 
