@@ -1,3 +1,5 @@
+import Timer from "../components/Timer";
+
 export default function Landing() {
   return (
     <div
@@ -7,6 +9,7 @@ export default function Landing() {
       <a variant="contained" className="title button" href="/home">
         Ga door
       </a>
+      <Timer/>
       <img
         src="images/logo/Spel-officieel-Transparant.png"
         alt="logo"
