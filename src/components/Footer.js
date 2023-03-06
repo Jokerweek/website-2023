@@ -30,6 +30,9 @@ export default function Footer() {
               <a href="/expo">Expo kaart</a>
             </li>
             <li>
+              <a href="/randactiviteiten">Randactiviteiten</a>
+            </li>
+            <li>
               <a href="/">Countdown</a>
             </li>
           </ul>

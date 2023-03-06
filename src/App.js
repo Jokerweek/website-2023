@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { useMobile } from "./hooks";
-import { Home , Landing, Weekmenu, Kalender, Huisregels, Sponsors, Lezingen, Opdracht, Expo } from "./pages";
+import { Home , Landing, Weekmenu, Kalender, Huisregels, Sponsors, Lezingen, Opdracht, Expo, Randactiviteiten } from "./pages";
 
 export default function App() {
   useMobile();
@@ -18,6 +18,7 @@ export default function App() {
         <Route exact path="/sponsors" element={<Sponsors />} />
         <Route exact path="/lezingen" element={<Lezingen />} />
         <Route exact path="/opdracht" element={<Opdracht />} />
+        <Route exact path="/randactiviteiten" element={<Randactiviteiten />} />
         <Route exact path="/expo" element={<Expo />} />
       </Routes>
     </BrowserRouter>
