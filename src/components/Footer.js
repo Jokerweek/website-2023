@@ -12,7 +12,7 @@ export default function Footer() {
               <a href="/weekmenu">Weekmenu</a>
             </li>
             <li>
-              <a href="">Kalender</a>
+              <a href="/">Kalender</a>
             </li>
             <li>
               <a href="/">Countdown</a>
@@ -21,16 +21,16 @@ export default function Footer() {
           <ul>
             <h3>Externe links</h3>
             <li>
-              <a href="">Radio</a>
+              <a href="/">Radio</a>
             </li>
             <li>
-              <a href="">Bib</a>
+              <a href="/">Bib</a>
             </li>
           </ul>
           <ul>
             <h3>Contact</h3>
             <li>
-              <a href="">
+              <a href="/">
                 Probleem <br /> melden
               </a>
             </li>
