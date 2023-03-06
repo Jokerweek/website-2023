@@ -4,11 +4,7 @@ export default function Landing() {
       className="background"
       style={{ height: "100vh", justifyContent: "space-evenly" }}
     >
-      <a
-        variant="contained"
-        className="title button"
-        href="/home"
-      >
+      <a variant="contained" className="title button" href="/home">
         Ga door
       </a>
       <img

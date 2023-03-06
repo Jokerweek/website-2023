@@ -1,7 +1,3 @@
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { Button, IconButton } from "@mui/material";
-import { useRecoilValue } from "recoil";
-import mobile from "../recoil/mobile";
 import Doorklik from "./templates/Doorklik";
 
 export default function Mobile() {

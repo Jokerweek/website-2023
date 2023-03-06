@@ -1,20 +1,36 @@
-.background .topImage{
-    width: 300px;
-    max-width: 70vw;
-    margin: 2rem;
+.background .topImage {
+  width: 300px;
+  max-width: 70vw;
+  margin: 2rem;
+  flex-shrink: 2;
 }
 
-.background .bottomImage{
-    width: 100px;
-    max-width: 70vw;
-    margin: 2rem;
+.background .bottomImage {
+  width: 100px;
+  max-width: 70vw;
+  margin: 2rem 0 2rem;
 }
 
 .background p {
-    width: 600px;
-    max-width: 80vw;
-    text-align: left;
-    font-family: "myHelvetica";
-    font-size: 1rem;
-    line-height: 1.2rem;
+  max-width: 600px;
+  text-align: left;
+  font-family: "myHelvetica";
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.doorklikContainerDesktop {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem 2rem 1rem;
+}
+
+.doorklikContainerMobile {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem 0 2rem;
+}
+
+.doorklikMain {
+  min-width: 200px;
 }
