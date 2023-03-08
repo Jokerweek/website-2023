@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "~/components";
 import { useBreakpoint } from "~/hooks";
@@ -30,7 +31,9 @@ function Pin(props: PinProps) {
 function Mobile() {
   return (
     <div className="relative w-[100%] overflow-x-hidden">
-      <img
+      <Image
+        width={720}
+        height={1280}
         src="/images/bg/JW-Regard-Website-v1-MOBILE.jpg"
         alt="logo"
         className="w-screen"
@@ -72,7 +75,9 @@ function Mobile() {
 function Desktop() {
   return (
     <div className="relative w-[100%] overflow-hidden">
-      <img
+      <Image
+        width={1920}
+        height={1080}
         src="/images/bg/JW-Regard-Website-v4-PC.jpg"
         alt="logo"
         className="w-screen"

@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import Link from "next/link";
 
 const Timer = dynamic(() => import("~/components/Timer"), {
@@ -8,8 +9,10 @@ const Timer = dynamic(() => import("~/components/Timer"), {
 export default function Home() {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-between bg-paper bg-contain bg-repeat p-5">
-      <img
-        src="images/logo/Spel-officieel-Transparant.png"
+      <Image
+        width={300}
+        height={300}
+        src="/images/logo/Spel-officieel-Transparant.png"
         alt="logo"
         className="mt-10 w-[300px] max-w-[60vw]"
       />
@@ -20,8 +23,10 @@ export default function Home() {
         Ga door
       </Link>
       <Timer />
-      <img
-        src="images/test_1.png"
+      <Image
+        width={300}
+        height={200}
+        src="/images/test_1.png"
         alt="logo"
         className="w-[300px] max-w-[60vw]"
       />

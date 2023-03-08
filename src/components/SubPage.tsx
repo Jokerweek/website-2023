@@ -1,5 +1,6 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { IconButton } from "@mui/material";
+import Image from "next/image";
 import { useBreakpoint } from "~/hooks";
 import Footer from "./Footer";
 
@@ -20,9 +21,11 @@ function Mobile(props: SubPageProps) {
           <ArrowBackIcon />
         </IconButton>
 
-        <img
+        <Image
           src={props.image}
-          className="w-[300px] max-w-[70vw]"
+          width={300}
+          height={200}
+          className="max-w-[70vw]"
           alt="Doorklik afbeelding"
         />
         <h1 className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
@@ -31,10 +34,12 @@ function Mobile(props: SubPageProps) {
         <div className="flex justify-center">
           <div className="maw-w-[600px]">{props.children}</div>
         </div>
-        <img
-          src="images/logo/Spel-officieel-Transparant.png"
+        <Image
+          width={100}
+          height={100}
+          src="/images/logo/Spel-officieel-Transparant.png"
           alt="logo"
-          className="w-[100px] max-w-[70vw]"
+          className="max-w-[70vw]"
         />
       </div>
       <Footer />
@@ -60,15 +65,19 @@ function Desktop(props: SubPageProps) {
             <div className="max-w-[600px]">{props.children}</div>
           </div>
           <div>
-            <img
+            <Image
+              width={300}
+              height={200}
               src={props.image}
-              className="mt-20 w-[300px] max-w-[70vw]"
+              className="mt-20 max-w-[70vw]"
               alt="Doorklik afbeelding"
             />
           </div>
         </div>
-        <img
-          src="images/logo/Spel-officieel-Transparant.png"
+        <Image
+          width={100}
+          height={100}
+          src="/images/logo/Spel-officieel-Transparant.png"
           alt="logo"
           className="w-[100px] max-w-[70vw]"
         />
