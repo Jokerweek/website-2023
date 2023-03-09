@@ -19,15 +19,15 @@ export default function Footer() {
       <div className="flex justify-center gap-6">
         <ul className="list-square">
           <h3>Sitemap</h3>
-          <Ref href="/home" title="Home" />
-          <Ref href="/weekmenu" title="Weekmenu" />
-          <Ref href="/kalender" title="Kalender" />
-          <Ref href="/huisregels" title="Huisregels" />
-          <Ref href="/sponsors" title="Sponsors" />
-          <Ref href="/lezingen" title="Lezingen" />
-          <Ref href="/opdracht" title="Opdracht" />
-          <Ref href="/expo" title="Expo kaart" />
-          <Ref href="/randactiviteiten" title="Randactiviteiten" />
+          <Ref href="home" title="Home" />
+          <Ref href="weekmenu" title="Weekmenu" />
+          <Ref href="kalender" title="Kalender" />
+          <Ref href="huisregels" title="Huisregels" />
+          <Ref href="sponsors" title="Sponsors" />
+          <Ref href="lezingen" title="Lezingen" />
+          <Ref href="opdracht" title="Opdracht" />
+          <Ref href="expo" title="Expo kaart" />
+          <Ref href="randactiviteiten" title="Randactiviteiten" />
           <Ref href="/" title="Countdown" />
         </ul>
         <ul className="list-square">

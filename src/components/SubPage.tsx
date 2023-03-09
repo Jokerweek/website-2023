@@ -15,7 +15,7 @@ function Mobile(props: SubPageProps) {
     <>
       <div className="flex w-[100%] flex-col items-center gap-6 bg-paper bg-contain bg-repeat p-10">
         <IconButton
-          href="/home"
+          href="home"
           style={{ position: "fixed", top: "0px", left: "0px" }}
         >
           <ArrowBackIcon />
@@ -52,7 +52,7 @@ function Desktop(props: SubPageProps) {
     <>
       <div className="flex w-[100%] flex-col items-center gap-6 bg-paper bg-contain bg-repeat p-10">
         <IconButton
-          href="/home"
+          href="home"
           style={{ position: "fixed", top: "0px", left: "0px" }}
         >
           <ArrowBackIcon />

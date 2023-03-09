@@ -18,7 +18,7 @@ export default function Home() {
       />
       <Link
         className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary hover:bg-black-100 hover:shadow-lg"
-        href="/home"
+        href="home"
       >
         Ga door
       </Link>
