@@ -34,7 +34,7 @@ function Mobile() {
       <Image
         width={720}
         height={1280}
-        src="/images/bg/JW-Regard-Website-v1-MOBILE.jpg"
+        src="https://users.ugent.be/~psoubrie/images/bg/JW-Regard-Website-v1-MOBILE.jpg"
         alt="logo"
         className="w-screen"
       />
@@ -78,7 +78,7 @@ function Desktop() {
       <Image
         width={1920}
         height={1080}
-        src="/images/bg/JW-Regard-Website-v4-PC.jpg"
+        src="https://users.ugent.be/~psoubrie/images/bg/JW-Regard-Website-v4-PC.jpg"
         alt="logo"
         className="w-screen"
       />

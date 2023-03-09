@@ -2,7 +2,7 @@ import SubPage from "~/components/SubPage";
 
 export default function Weekmenu() {
   return (
-    <SubPage title="Weekmenu" image="/images/test_1.png">
+    <SubPage title="Weekmenu" image="https://users.ugent.be/~psoubrie/images/test_1.png">
       <h2 className="text-2xl mt-5 text-primary">MAANDAG</h2>
       Occaecat est cillum sit adipisicing. Consectetur fugiat nostrud non
       ullamco eiusmod adipisicing fugiat culpa incididunt minim sunt ullamco. Eu

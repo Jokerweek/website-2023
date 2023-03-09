@@ -77,7 +77,7 @@ function Desktop(props: SubPageProps) {
         <Image
           width={100}
           height={100}
-          src="/images/logo/Spel-officieel-Transparant.png"
+          src="https://users.ugent.be/~psoubrie/images/logo/Spel-officieel-Transparant.png"
           alt="logo"
           className="w-[100px] max-w-[70vw]"
         />

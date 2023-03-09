@@ -13,11 +13,11 @@ const config = {
   //-------------------
   // for export to static html
 
-  // images: {
-  //   unoptimized: true,
-  // },
-  // basePath: "/~psoubrie",
-  // assetPrefix: "/~psoubrie",
+  images: {
+    unoptimized: true,
+  },
+  basePath: "/~psoubrie",
+  assetPrefix: "/~psoubrie",
 
   //-------------------
 };

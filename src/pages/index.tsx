@@ -12,7 +12,7 @@ export default function Home() {
       <Image
         width={300}
         height={300}
-        src="/images/logo/Spel-officieel-Transparant.png"
+        src="https://users.ugent.be/~psoubrie/images/logo/Spel-officieel-Transparant.png"
         alt="logo"
         className="mt-10 w-[300px] max-w-[60vw]"
       />
@@ -26,7 +26,7 @@ export default function Home() {
       <Image
         width={300}
         height={200}
-        src="/images/test_1.png"
+        src="https://users.ugent.be/~psoubrie/images/test_1.png"
         alt="logo"
         className="w-[300px] max-w-[60vw]"
       />

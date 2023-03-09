@@ -19,7 +19,7 @@ module.exports = {
         body: ["var(--font-body)"],
       },
       backgroundImage: {
-        paper: "url('/images/bg/Spel-officieel-background.jpg')",
+        paper: "url('https://users.ugent.be/~psoubrie/images/bg/Spel-officieel-background.jpg')",
       },
     },
   },
