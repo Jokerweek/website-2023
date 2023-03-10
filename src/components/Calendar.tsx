@@ -68,6 +68,7 @@ export default function Calendar(props: any) {
           <div
             className="row-span-full row-start-1 border-l border-dashed p-1"
             style={{ gridColumnStart: `${i + 2}` }}
+            key={day}
           >
             <h2>{day}</h2>
           </div>
@@ -76,6 +77,7 @@ export default function Calendar(props: any) {
           <div
             className="col-span-full col-start-1 border-t border-dashed p-1"
             style={{ gridRowStart: `${i * 2 + 2}` }}
+            key={i}
           >
             <p>{i + 8}</p>
           </div>
