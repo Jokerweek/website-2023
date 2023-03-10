@@ -21,7 +21,7 @@ export function Event(props: EventProps) {
   return (
     <div
       style={{
-        gridColumnStart: `${props.day + 1}`,
+        gridColumnStart: `${props.day}`,
         gridRowStart: `${props.hours[0] * 2 - 14}`,
         gridRowEnd: `${props.hours[1] * 2 - 14}`,
       }}
@@ -60,19 +60,14 @@ export function EventLink(props: EventLinkProps) {
   );
 }
 
-export default function Calendar(props: any) {
+type CalendarProps = {
+  children?: React.ReactNode;
+};
+
+export default function Calendar(props: CalendarProps) {
   return (
-    <div {...props}>
-      <div className="grid w-full grid-cols-[25px_repeat(6,_1fr)] grid-rows-[25px_repeat(32,_20px)] text-xs">
-        {daysOfWeek.map((day, i) => (
-          <div
-            className="row-span-full row-start-1 border-l border-dashed p-1"
-            style={{ gridColumnStart: `${i + 2}` }}
-            key={day}
-          >
-            <h2>{day}</h2>
-          </div>
-        ))}
+    <div className="relative h-[690px]">
+      <div className="absolute grid w-[25px] grid-rows-[25px_repeat(32,_20px)] text-xs text-primary -left-[25px]">
         {[...Array(16)].map((_, i) => (
           <div
             className="col-span-full col-start-1 border-t border-dashed p-1"
@@ -82,7 +77,36 @@ export default function Calendar(props: any) {
             <p>{i + 8}</p>
           </div>
         ))}
-        {props.children}
+      </div>
+      <div className="test absolute w-full overflow-x-auto">
+        <div className="grid w-[565px] grid-cols-[repeat(6,90px)] grid-rows-[25px_repeat(32,_20px)] text-xs">
+          <div className="col-span-full row-start-1 bg-primary" />
+          {daysOfWeek.map((day, i) => (
+            <div
+              className="row-span-full row-start-1 border-l border-dashed p-1 text-secondary"
+              style={{ gridColumnStart: `${i + 1}` }}
+              key={day}
+            >
+              <h2>{day}</h2>
+            </div>
+          ))}
+          {[...Array(15)].map((_, i) => (
+            <div
+              className="col-span-full col-start-1 border-t border-dashed p-1"
+              style={{ gridRowStart: `${i * 2 + 4}` }}
+              key={i}
+            />
+          ))}
+          {daysOfWeek.map((day, i) => (
+            <div
+              className="row-span-full row-start-2 border-l border-dashed p-1"
+              style={{ gridColumnStart: `${i + 1}` }}
+              key={day}
+            />
+          ))}
+
+          {props.children}
+        </div>
       </div>
     </div>
   );

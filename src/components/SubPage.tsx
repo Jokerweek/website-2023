@@ -31,9 +31,7 @@ function Mobile(props: SubPageProps) {
         <h1 className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
           {props.title}
         </h1>
-        <div className="flex justify-center">
-          <div className="maw-w-[600px]">{props.children}</div>
-        </div>
+        <div className="w-full">{props.children}</div>
         <Image
           width={100}
           height={100}
@@ -58,11 +56,11 @@ function Desktop(props: SubPageProps) {
           <ArrowBackIcon />
         </IconButton>
         <div className="flex justify-center gap-10">
-          <div className="min-w-[200px]">
-            <h1 className="w-min bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
+          <div className="w-[600px]">
+            <h1 className="mb-6 w-min bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
               {props.title}
             </h1>
-            <div className="max-w-[600px] mt-6">{props.children}</div>
+            {props.children}
           </div>
           <div>
             <Image
