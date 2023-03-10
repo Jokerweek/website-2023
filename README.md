@@ -1,27 +1,45 @@
-# Website van de jokerweek voor 2023
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+# Algemeen
+[Technische hulp](#technische-hulp)
+## Doel van dit project
+- Gebruik maken van Github om de Jokerweek website te 
+- Gestandaardiseerde Jokerweek website doorheen de jaren
+- Een soort template waarmee volgende generaties aan de slag kunnen
+- Een vlotte ervaring voor onze 500+ gebruikers
+- Een manier om de website aan de UGent te kunnen archiveren na de Jokerweek
+(zie [Archiveren](#Archiveren))
 
-## What's next? How do I make an app with this?
+## Gebruikte technologieën
+- T3 stack
+  - [NextJs](https://nextjs.org/)
+    - Snel
+    - Afbeelding optimalisatie
+    - Router ingebouwd  
+  - [Tailwind](https://tailwindcss.com/)
+    - Gebruiksvriendelijker dan css
+    - Geen classNames uitvinden
+- [Material UI (MUI)](https://mui.com/)
+  - Gemakkelijk icoontjes / knoppen implementeren
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+# Start
+## Basis op je computer
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Starten met het project
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Werken met Github
 
-## Learn More
+# Richtlijnen
+## Essentieel
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+### Aangeraden
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Archiveren 
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+# Technische hulp
+> Ik ben ALTIJD bereikbaar om jullie te helpen, voor de kleinste **vraag** of als jullie een **crash course** nodig hebben.
+>
+> ~ Philippe Soubrier: [philippe.soubrier@gmail.com](mailto:philippe.soubrier@gmail.com)
 
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Dit project werd gestart door team Digitaal in 2023 door
+- Stef Lemmens
+- Simon Baecke
+- Philippe Soubrier
