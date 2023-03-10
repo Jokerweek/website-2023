@@ -20,19 +20,7 @@
 - [Material UI (MUI)](https://mui.com/)
   - Gemakkelijk icoontjes / knoppen implementeren
 
-# Start
-## Basis op je computer
-
-## Starten met het project
-
-## Werken met Github
-
-# Richtlijnen
-## Essentieel
-
-### Aangeraden
-
-## Archiveren 
+# Meer info in de [wiki](https://github.com/Jokerweek/website-2023/wiki)
 
 # Technische hulp
 > Ik ben ALTIJD bereikbaar om jullie te helpen, voor de kleinste **vraag** of als jullie een **crash course** nodig hebben.
