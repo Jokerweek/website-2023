@@ -9,17 +9,17 @@ export default function Randactiviteiten() {
         <Event day={2} hours={[17, 18]} title="Jarenstrijd">
           <EventLink href="/" />
         </Event>
-        <Event day={3} hours={[9, 10]} title="Ochtend- activiteit" />
+        <Event day={3} hours={[9.5, 10]} title="Ochtend- activiteit" />
         <Event day={3} hours={[11, 11.5]} title="Zoekspel" />
         <Event day={3} hours={[17, 18]} title="Jarenstrijd">
           <EventLink href="/" />
         </Event>
-        <Event day={4} hours={[9, 10]} title="Ochtend- activiteit" />
+        <Event day={4} hours={[9.5, 10]} title="Ochtend- activiteit" />
         <Event day={4} hours={[11, 11.5]} title="Zoekspel" />
         <Event day={4} hours={[17, 18]} title="Jarenstrijd">
           <EventLink href="/" />
         </Event>
-        <Event day={5} hours={[9, 10]} title="Ochtend- activiteit" />
+        <Event day={5} hours={[9.5, 10]} title="Ochtend- activiteit" />
         <Event day={5} hours={[11, 11.5]} title="Zoekspel" />
         <Event day={5} hours={[17, 18]} title="Jarenstrijd">
           <EventLink href="/" />
