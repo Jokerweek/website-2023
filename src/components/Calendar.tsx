@@ -68,7 +68,7 @@ export default function Calendar(props: CalendarProps) {
   return (
     <div className="relative h-[690px]">
       <div className="absolute grid w-[25px] grid-rows-[25px_repeat(32,_20px)] text-xs text-primary -left-[25px]">
-        {[...Array(16)].map((_, i) => (
+        {[...Array<number>(16)].map((_, i) => (
           <div
             className="col-span-full col-start-1 border-t border-dashed p-1"
             style={{ gridRowStart: `${i * 2 + 2}` }}
@@ -90,7 +90,7 @@ export default function Calendar(props: CalendarProps) {
               <h2>{day}</h2>
             </div>
           ))}
-          {[...Array(15)].map((_, i) => (
+          {[...Array<number>(15)].map((_, i) => (
             <div
               className="col-span-full col-start-1 border-t border-dashed p-1"
               style={{ gridRowStart: `${i * 2 + 4}` }}
