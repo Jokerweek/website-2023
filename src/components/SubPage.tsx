@@ -31,7 +31,7 @@ function Mobile(props: SubPageProps) {
         <h1 className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
           {props.title}
         </h1>
-        <div className="w-full">{props.children}</div>
+        <div className="w-full max-w-[600px]">{props.children}</div>
         <Image
           width={100}
           height={100}
@@ -48,7 +48,7 @@ function Mobile(props: SubPageProps) {
 function Desktop(props: SubPageProps) {
   return (
     <>
-      <div className="flex w-[100%] flex-col items-center gap-6 bg-paper bg-contain bg-repeat p-10">
+      <div className="w-[100%] bg-paper bg-contain bg-repeat p-10">
         <IconButton
           href="home"
           style={{ position: "fixed", top: "0px", left: "0px" }}
@@ -56,11 +56,11 @@ function Desktop(props: SubPageProps) {
           <ArrowBackIcon />
         </IconButton>
         <div className="flex justify-center gap-10">
-          <div className="w-[600px]">
-            <h1 className="mb-6 w-min bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
+          <div className="min-w-[200px] max-w-[600px] flex-grow">
+            <h1 className="w-min bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
               {props.title}
             </h1>
-            {props.children}
+            <div className=" mt-6">{props.children}</div>
           </div>
           <div>
             <Image
@@ -72,13 +72,16 @@ function Desktop(props: SubPageProps) {
             />
           </div>
         </div>
-        <Image
-          width={100}
-          height={100}
-          src="/images/logo/Spel-officieel-Transparant.png"
-          alt="logo"
-          className="w-[100px] max-w-[70vw]"
-        />
+        <div className="mt-6 flex justify-center">
+          {" "}
+          <Image
+            width={100}
+            height={100}
+            src="/images/logo/Spel-officieel-Transparant.png"
+            alt="logo"
+            className="w-[100px] max-w-[70vw]"
+          />
+        </div>
       </div>
       <Footer />
     </>

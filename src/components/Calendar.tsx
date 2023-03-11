@@ -66,7 +66,7 @@ type CalendarProps = {
 
 export default function Calendar(props: CalendarProps) {
   return (
-    <div className="relative h-[690px]">
+    <div className="relative h-[665px]">
       <div className="absolute grid w-[25px] grid-rows-[25px_repeat(32,_20px)] text-xs text-primary -left-[25px]">
         {[...Array<number>(16)].map((_, i) => (
           <div
@@ -79,7 +79,7 @@ export default function Calendar(props: CalendarProps) {
         ))}
       </div>
       <div className="test absolute w-full overflow-x-auto">
-        <div className="grid w-[565px] grid-cols-[repeat(6,90px)] grid-rows-[25px_repeat(32,_20px)] text-xs">
+        <div className="grid w-[565px] grid-cols-[repeat(6,99px)] grid-rows-[25px_repeat(32,_20px)] text-xs">
           <div className="col-span-full row-start-1 bg-primary" />
           {daysOfWeek.map((day, i) => (
             <div
