@@ -10,9 +10,11 @@ type SubPageProps = {
   children: React.ReactNode;
 };
 
+// mobile layout for subpages
 function Mobile(props: SubPageProps) {
   return (
     <>
+      {/* baground image | horizontal centering of everything */}
       <div className="flex w-[100%] flex-col items-center gap-6 bg-paper bg-contain bg-repeat p-10">
         <IconButton
           href="home"
@@ -31,6 +33,7 @@ function Mobile(props: SubPageProps) {
         <h1 className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
           {props.title}
         </h1>
+        {/* responsive div for content */}
         <div className="w-full max-w-[600px]">{props.children}</div>
         <Image
           width={100}
@@ -45,9 +48,11 @@ function Mobile(props: SubPageProps) {
   );
 }
 
+// desktop layout for subpages
 function Desktop(props: SubPageProps) {
   return (
     <>
+      {/* baground image*/}
       <div className="w-[100%] bg-paper bg-contain bg-repeat p-10">
         <IconButton
           href="home"
@@ -55,14 +60,17 @@ function Desktop(props: SubPageProps) {
         >
           <ArrowBackIcon />
         </IconButton>
+        {/* responsive horizontal layout */}
         <div className="flex justify-center gap-10">
+          {/* responsive vertical column for content */}
           <div className="min-w-[200px] max-w-[600px] flex-grow">
             <h1 className="w-min bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
               {props.title}
             </h1>
             <div className=" mt-6">{props.children}</div>
           </div>
-          <div>
+          {/* vertical column for image */}
+          <div> {/* for maintaining proportions */}
             <Image
               width={300}
               height={200}
@@ -72,6 +80,7 @@ function Desktop(props: SubPageProps) {
             />
           </div>
         </div>
+        {/* horizontal alignment logo */}
         <div className="mt-6 flex justify-center">
           {" "}
           <Image

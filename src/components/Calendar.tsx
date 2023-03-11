@@ -17,6 +17,7 @@ type EventProps = {
   children?: React.ReactNode;
 };
 
+// component for an event in the calendar
 export function Event(props: EventProps) {
   return (
     <div
@@ -41,6 +42,7 @@ type EventLinkProps = {
   right?: boolean;
 };
 
+// component for link inside an event in the calendar
 export function EventLink(props: EventLinkProps) {
   return (
     <IconButton
@@ -67,6 +69,7 @@ type CalendarProps = {
 export default function Calendar(props: CalendarProps) {
   return (
     <div className="relative h-[665px]">
+      {/* fixed left column of the calendar */}
       <div className="absolute grid w-[25px] grid-rows-[25px_repeat(32,_20px)] text-xs text-primary -left-[25px]">
         {[...Array<number>(16)].map((_, i) => (
           <div
@@ -78,9 +81,13 @@ export default function Calendar(props: CalendarProps) {
           </div>
         ))}
       </div>
+      {/* scrollable calendar container */}
       <div className="test absolute w-full overflow-x-auto">
+        {/* grid of the calendar */}
         <div className="grid w-[565px] grid-cols-[repeat(6,99px)] grid-rows-[25px_repeat(32,_20px)] text-xs">
+          {/* background color top row  */}
           <div className="col-span-full row-start-1 bg-primary" />
+          {/* days of the week | top row */}
           {daysOfWeek.map((day, i) => (
             <div
               className="row-span-full row-start-1 border-l border-dashed p-1 text-secondary"
@@ -90,6 +97,7 @@ export default function Calendar(props: CalendarProps) {
               <h2>{day}</h2>
             </div>
           ))}
+          {/* set of horirontal lines */}
           {[...Array<number>(15)].map((_, i) => (
             <div
               className="col-span-full col-start-1 border-t border-dashed p-1"
@@ -97,6 +105,7 @@ export default function Calendar(props: CalendarProps) {
               key={i}
             />
           ))}
+          {/* set of vertical lines */}
           {daysOfWeek.map((day, i) => (
             <div
               className="row-span-full row-start-2 border-l border-dashed p-1"
@@ -104,7 +113,7 @@ export default function Calendar(props: CalendarProps) {
               key={day}
             />
           ))}
-
+          {/* events goes here */}
           {props.children}
         </div>
       </div>
