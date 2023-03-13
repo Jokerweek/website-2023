@@ -15,6 +15,7 @@ type EventProps = {
   hours: [number, number] /** [start, end] **/;
   title: string;
   children?: React.ReactNode;
+  href?: string;
 };
 
 // component for an event in the calendar
@@ -28,16 +29,17 @@ export function Event(props: EventProps) {
       }}
       className="bg-secondary bg-opacity-60 "
     >
-      <div className="relative h-full bg-black-100 bg-opacity-20 p-1">
-        <p>{props.title}</p>
-        {props.children}
-      </div>
+      <a href={props.href}>
+        <div className="relative h-full w-full bg-black-100 bg-opacity-20 p-1 text-left">
+          <p>{props.title}</p>
+          {props.children}
+        </div>
+      </a>
     </div>
   );
 }
 
 type EventLinkProps = {
-  href: string;
   top?: boolean;
   right?: boolean;
 };
@@ -55,7 +57,6 @@ export function EventLink(props: EventLinkProps) {
         left: props.right ? "4px" : "unset",
         right: props.right ? "unset" : "4px",
       }}
-      href={props.href}
     >
       <OpenInNewIcon style={{ height: "15px" }} />
     </IconButton>
@@ -70,7 +71,7 @@ export default function Calendar(props: CalendarProps) {
   return (
     <div className="relative h-[665px]">
       {/* fixed left column of the calendar */}
-      <div className="absolute grid w-[25px] grid-rows-[25px_repeat(32,_20px)] text-xs text-primary -left-[25px]">
+      <div className="absolute -left-[25px] grid w-[25px] grid-rows-[25px_repeat(32,_20px)] text-xs text-primary">
         {[...Array<number>(16)].map((_, i) => (
           <div
             className="col-span-full col-start-1 border-t border-dashed p-1"

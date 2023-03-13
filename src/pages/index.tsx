@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+import SponsorsLogos from "~/components/SponsorsLogos";
 
 const Timer = dynamic(() => import("~/components/Timer"), {
   ssr: false,
@@ -8,7 +9,7 @@ const Timer = dynamic(() => import("~/components/Timer"), {
 
 export default function Home() {
   return (
-    <div className="flex min-h-[600px] h-screen w-screen flex-col items-center justify-between bg-paper bg-contain bg-repeat p-5">
+    <div className="flex min-h-screen flex-col items-center justify-between gap-6 bg-paper bg-contain bg-repeat p-5">
       <Image
         width={300}
         height={300}
@@ -23,13 +24,7 @@ export default function Home() {
         Ga door
       </Link>
       <Timer />
-      <Image
-        width={300}
-        height={200}
-        src="/images/test_1.png"
-        alt="logo"
-        className="w-[300px] max-w-[60vw]"
-      />
+      <SponsorsLogos />
     </div>
   );
 }
