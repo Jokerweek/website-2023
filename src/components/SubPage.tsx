@@ -8,16 +8,18 @@ type SubPageProps = {
   title: string;
   image: string;
   children: React.ReactNode;
+  back?: string;
 };
 
 // mobile layout for subpages
 function Mobile(props: SubPageProps) {
+  const { back = "home" } = props;
   return (
     <>
       {/* baground image | horizontal centering of everything */}
       <div className="flex w-[100%] flex-col items-center gap-6 bg-paper bg-contain bg-repeat p-10">
         <IconButton
-          href="home"
+          href={back}
           style={{ position: "fixed", top: "0px", left: "0px" }}
         >
           <ArrowBackIcon />
@@ -70,7 +72,9 @@ function Desktop(props: SubPageProps) {
             <div className=" mt-6">{props.children}</div>
           </div>
           {/* vertical column for image */}
-          <div> {/* for maintaining proportions */}
+          <div>
+            {" "}
+            {/* for maintaining proportions */}
             <Image
               width={300}
               height={200}
