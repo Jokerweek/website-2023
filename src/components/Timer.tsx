@@ -14,18 +14,42 @@ function Unit(props: UnitProps) {
   );
 }
 
-export default function Timer() {
-  return (
-    <Countdown
-      date={Date.parse("2023-03-27T10:00:00+01:00")}
-      renderer={(data) => (
+type rendererProps = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  completed: boolean;
+};
+
+type TimerProps = {
+  deadline: string;
+  children?: React.ReactNode;
+};
+
+export default function Timer(props: TimerProps) {
+  // Renderer callback with condition
+  const renderer = (data: rendererProps) => {
+    if (data.completed) {
+      // Render a completed state
+      return props.children;
+    } else {
+      // Render a countdown
+      return (
         <div className="flex items-end text-4xl">
           <Unit unit="Days" value={data.days} />:
           <Unit unit="Hours" value={data.hours} />:
           <Unit unit="Minutes" value={data.minutes} />:
           <Unit unit="Seconds" value={data.seconds} />
         </div>
-      )}
+      );
+    }
+  };
+
+  return (
+    <Countdown
+      date={Date.parse(props.deadline)}
+      renderer={renderer}
     />
   );
 }

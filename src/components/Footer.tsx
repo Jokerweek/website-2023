@@ -28,6 +28,7 @@ export default function Footer() {
           <Ref href="opdracht" title="Opdracht" />
           <Ref href="expo" title="Expo kaart" />
           <Ref href="randactiviteiten" title="Randactiviteiten" />
+          <Ref href="jarenstrijd" title="Jarenstrijd" />
           <Ref href="/" title="Countdown" />
         </ul>
         <ul className="list-square">

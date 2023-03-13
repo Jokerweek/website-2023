@@ -36,7 +36,7 @@ function Mobile(props: SubPageProps) {
           {props.title}
         </h1>
         {/* responsive div for content */}
-        <div className="w-full max-w-[600px]">{props.children}</div>
+        <div className="w-full max-w-[600px] text-sm">{props.children}</div>
         <Image
           width={100}
           height={100}

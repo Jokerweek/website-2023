@@ -53,7 +53,10 @@ function Mobile() {
       <Pin box={["152vw", "24vw", "24vw", "24vw"]} href="randactiviteiten">
         randactiviteiten
       </Pin>
-      <Pin box={["100vw", "38vw", "5vw", "7vw"]} href="https://jw-database-code.vercel.app/">
+      <Pin
+        box={["100vw", "38vw", "5vw", "7vw"]}
+        href="https://jw-database-code.vercel.app/"
+      >
         bib
       </Pin>
       <Pin box={["104vw", "48vw", "5vw", "8vw"]} href="opdracht">
@@ -100,7 +103,10 @@ function Desktop() {
       <Pin box={["19vw", "83vw", "12vw", "12vw"]} href="randactiviteiten">
         randactiviteiten
       </Pin>
-      <Pin box={["23vw", "39vw", "5vw", "6vw"]} href="https://jw-database-code.vercel.app/">
+      <Pin
+        box={["23vw", "39vw", "5vw", "6vw"]}
+        href="https://jw-database-code.vercel.app/"
+      >
         bib
       </Pin>
       <Pin box={["26vw", "47vw", "5vw", "6vw"]} href="opdracht">

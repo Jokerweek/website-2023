@@ -1,10 +1,9 @@
-import SponsorsLogos from "~/components/SponsorsLogos";
-import SubPage from "~/components/SubPage";
+import { SponsorsLogos, SubPage } from "~/components";
 
 export default function Sponsors() {
   return (
     <SubPage title="Sponsors" image="/images/test_1.png">
-      <SponsorsLogos/>
+      <SponsorsLogos />
     </SubPage>
   );
 }

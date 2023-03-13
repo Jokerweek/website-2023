@@ -1,5 +1,4 @@
-import { Calendar, Event, EventLink } from "~/components";
-import SubPage from "~/components/SubPage";
+import { Calendar, Event, EventLink, SubPage } from "~/components";
 
 export default function Randactiviteiten() {
   return (
