@@ -9,7 +9,7 @@ const Timer = dynamic(() => import("~/components/Timer"), {
 
 export default function Home() {
   function pass() {
-    var safety = prompt(
+    const safety = prompt(
       "Raadsel: Wie heeft deze website gemaakt? 🤔 [Voornaam]"
     );
     if (safety == "Philippe") {

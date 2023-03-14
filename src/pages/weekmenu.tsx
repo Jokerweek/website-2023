@@ -8,15 +8,16 @@ export default function Weekmenu() {
   return (
     <SubPage title="Weekmenu" image="/images/test_1.png">
       <h2 className="mt-5 text-2xl text-primary ">MAANDAG</h2>
-      <h3 className="my-2 text-base text-primary">wraps - MELISSA</h3>
-      Yeah, listen up, I'm 'bout to drop some heat Let me tell you 'bout this
-      wrap that can't be beat It's packed with veggies, meat or tofu A perfect
-      lunch that's easy to go to Wrap it up tight and you're good to go, that's
-      the truth It's healthy, delicious, and quite the proof!
+      <h3 className="my-2 text-base text-primary">WRAPS - MELISSA</h3>
+      Yeah, listen up, I&apos;m &apos;bout to drop some heat Let me tell you
+      &apos;bout this wrap that can&apos;t be beat It&apos;s packed with
+      veggies, meat or tofu A perfect lunch that&apos;s easy to go to Wrap it up
+      tight and you&apos;re good to go, that&apos;s the truth It&apos;s healthy,
+      delicious, and quite the proof!
       <h3 className="my-2 text-base text-primary">FRUIT</h3>
       Kleuren zo helder en smaken zoet, Voedzaam en gezond, een feest voor wie
-      het proeft, Sappig en lekker, zo'n verfrissend geluid, Wat ben ik? Een
-      heerlijk stuk fruit!
+      het proeft, Sappig en lekker, zo&apos;n verfrissend geluid, Wat ben ik?
+      Een heerlijk stuk fruit!
       <h3 className="my-2 text-base text-primary">
         wok/ iets anders WWF - LUKA
       </h3>
@@ -45,10 +46,10 @@ export default function Weekmenu() {
       <h3 className="my-2 text-base text-primary">brunch - ELKE & LAURES</h3>
       <p className="mb-4">
         Vandaag eten we een maaltijd, maar niet op het juiste moment. We eten
-        het 's middags, al is het meer voor 's ochtends gekend. Het is een feest
-        voor degenen die hongerig zijn, De keuze tussen al die gerechtjes is
-        voor iedereen fijn. Geen breakfast, geen brunch, maar wel een breakfast
-        for lunch!
+        het &apos;s middags, al is het meer voor &apos;s ochtends gekend. Het is
+        een feest voor degenen die hongerig zijn, De keuze tussen al die
+        gerechtjes is voor iedereen fijn. Geen breakfast, geen brunch, maar wel
+        een breakfast for lunch!
       </p>
       <Accordion
         style={{ boxShadow: "none", backgroundColor: "transparent" }}
@@ -60,17 +61,18 @@ export default function Weekmenu() {
         <AccordionDetails>
           <ul className="ml-2 list-square">
             <li>
-              Top voor je gezondheid: De Inca's gaven hun strijders quinoa te
-              eten om hen meer kracht, uithoudingsvermogen en energie te geven.
-              Deze zaadjes zijn zeer rijk aan vezels. Het is een fantastische
-              bondgenoot voor je gezondheid, want quinoa verbetert de kwaliteit
-              van het bloed en bevat onder meer koper en zink. De vezels
-              verbeteren de darmtransit en de eiwitten verbeteren de kwaliteit
-              van de huid, botten, pezen en spieren. Dit recept is een ideale
-              start voor een dag in topconditie. Bovendien verbetert de pompoen
-              bepaalde functies van het immuunsysteem door zijn antioxidante
-              werking. Deze groente is ook rijk aan bètacaroteen, een
-              plantaardig pigment dat de huid en de ogen helpt te beschermen.
+              Top voor je gezondheid: De Inca&apos;s gaven hun strijders quinoa
+              te eten om hen meer kracht, uithoudingsvermogen en energie te
+              geven. Deze zaadjes zijn zeer rijk aan vezels. Het is een
+              fantastische bondgenoot voor je gezondheid, want quinoa verbetert
+              de kwaliteit van het bloed en bevat onder meer koper en zink. De
+              vezels verbeteren de darmtransit en de eiwitten verbeteren de
+              kwaliteit van de huid, botten, pezen en spieren. Dit recept is een
+              ideale start voor een dag in topconditie. Bovendien verbetert de
+              pompoen bepaalde functies van het immuunsysteem door zijn
+              antioxidante werking. Deze groente is ook rijk aan bètacaroteen,
+              een plantaardig pigment dat de huid en de ogen helpt te
+              beschermen.
             </li>
             <li className="mt-3">
               Top voor de planeet: Zowel pompoen als quinoa groeien in België,
