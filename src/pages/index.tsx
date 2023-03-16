@@ -46,7 +46,7 @@ export default function Home() {
         className="absolute top-4 right-4 border p-2 text-right text-xs shadow-lg"
         onClick={() => pass()}
       >
-        Preview | 2de master 😍
+        Preview | 2de master 😍😎
       </button>
     </div>
   );
