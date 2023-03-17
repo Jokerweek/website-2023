@@ -6,10 +6,10 @@ type FlagProps = {
 };
 
 function Flag(props: FlagProps) {
-  const height = props.score * 13 + 32;
+  const height = props.score * 14 + 32;
   return (
     <div className="relative flex flex-col items-center gap-3">
-      <div className="h-[300px] border" />
+      <div className="h-[310px] border" />
       <div className="absolute" style={{ bottom: `${height}px` }}>
         <WavingFlag
           className="translate-x-[20px] scale-x-[-1]"
