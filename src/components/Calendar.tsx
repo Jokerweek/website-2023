@@ -1,8 +1,8 @@
+import CloseIcon from "@mui/icons-material/Close";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import LinkIcon from "@mui/icons-material/Link";
-import { IconButton, Modal } from "@mui/material";
+import { IconButton } from "@mui/material";
 import { useState } from "react";
-import CloseIcon from "@mui/icons-material/Close";
 
 const daysOfWeek = [
   "Zondag",
@@ -64,7 +64,7 @@ export function Event(props: EventProps) {
     <>
       <div style={{ display: open ? "block" : "none" }}>
         <div className="fixed top-0 left-0 h-screen w-full bg-black-100 bg-opacity-60 flex justify-center items-center z-10">
-          <div className="m-5 relative bg-secondary bg-contain bg-repeat p-3 text-base">
+          <div className="m-5 relative bg-secondary bg-contain bg-repeat p-3 text-base max-w-[500px]">
             <div className="absolute top-1 right-1">
               <IconButton onClick={() => setOpen(false)}>
                 <CloseIcon />
