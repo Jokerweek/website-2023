@@ -20,7 +20,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-end gap-6 bg-paper bg-contain bg-repeat p-5">
+    <div className="font-subTitle tracking-normal flex min-h-screen flex-col items-center justify-end gap-6 bg-paper bg-contain bg-repeat p-5">
       <div className="flex flex-grow flex-col items-center justify-center gap-6">
         <Image
           width={300}

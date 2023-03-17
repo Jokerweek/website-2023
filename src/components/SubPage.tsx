@@ -69,7 +69,7 @@ function Desktop(props: SubPageProps) {
             <h1 className="w-min bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
               {props.title}
             </h1>
-            <div className=" mt-6">{props.children}</div>
+            <div className="mt-6 text-base">{props.children}</div>
           </div>
           {/* vertical column for image */}
           <div>

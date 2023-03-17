@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         title: ["var(--font-title)"],
+        subTitle: ["var(--font-subTitle)"],
         body: ["var(--font-body)"],
       },
       backgroundImage: {
