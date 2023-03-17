@@ -1,5 +1,8 @@
-import { IconButton } from "@mui/material";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import FullscreenIcon from "@mui/icons-material/Fullscreen";
+import LinkIcon from "@mui/icons-material/Link";
+import { IconButton, Modal } from "@mui/material";
+import { useState } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 const daysOfWeek = [
   "Zondag",
@@ -10,56 +13,8 @@ const daysOfWeek = [
   "Vrijdag",
 ];
 
-type EventProps = {
-  day: number;
-  hours: [number, number] /** [start, end] **/;
-  title: string;
-  borderTop?: boolean;
-  subTitle?: string;
-  children?: React.ReactNode;
-  href?: string;
-};
-
-// component for an event in the calendar
-export function Event(props: EventProps) {
-  return (
-    <div
-      style={{
-        gridColumnStart: `${props.day}`,
-        gridRowStart: `${props.hours[0] * 2 - 14}`,
-        gridRowEnd: `${props.hours[1] * 2 - 14}`,
-      }}
-      className="bg-secondary bg-opacity-60 "
-    >
-      <a href={props.href}>
-        <div
-          className="relative h-full w-full bg-black-100 bg-opacity-20 p-1 text-left"
-          style={{ borderTop: props.borderTop ? "1px solid" : "unset" }}
-        >
-          <p className="font-subTitle tracking-normal">{props.title}</p>
-          <p className="text-black-100 text-opacity-70">{props.subTitle}</p>
-          {props.children}
-        </div>
-      </a>
-    </div>
-  );
-}
-
-type EventPopUpProps = {
-  title: string;
-  children?: React.ReactNode;
-};
-
-export function EventPopUp(props: EventPopUpProps) {
-  return (
-    <div className="text-white absolute h-[300px] w-[300px] bg-primary">
-      <p>{props.title}</p>
-      {props.children}
-    </div>
-  );
-}
-
 type EventLinkProps = {
+  type: "link" | "pop-up";
   top?: boolean;
   right?: boolean;
 };
@@ -78,8 +33,75 @@ export function EventLink(props: EventLinkProps) {
         right: props.right ? "unset" : "3px",
       }}
     >
-      <OpenInNewIcon style={{ height: "15px" }} />
+      {props.type === "link" ? (
+        <LinkIcon sx={{ height: "12px", color: "black" }} />
+      ) : props.type === "pop-up" ? (
+        <FullscreenIcon sx={{ height: "12px", color: "black" }} />
+      ) : null}
     </IconButton>
+  );
+}
+
+type EventProps = {
+  day: number;
+  hours: [number, number] /** [start, end] **/;
+  title: string;
+  borderTop?: boolean;
+  subTitle?: string;
+  children?: React.ReactNode;
+  href?: string;
+  // EventLink props:
+  type?: "link" | "pop-up" | null;
+  top?: boolean;
+  right?: boolean;
+};
+
+// component for an event in the calendar
+export function Event(props: EventProps) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <div style={{ display: open ? "block" : "none" }}>
+        <div className="fixed top-0 left-0 h-screen w-full bg-black-100 bg-opacity-60 flex justify-center items-center z-10">
+          <div className="m-5 relative bg-secondary bg-contain bg-repeat p-3 text-base">
+            <div className="absolute top-1 right-1">
+              <IconButton onClick={() => setOpen(false)}>
+                <CloseIcon />
+              </IconButton>
+            </div>
+            {props.children || (<p className="m-6">Come back later 😁</p>)}
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          gridColumnStart: `${props.day}`,
+          gridRowStart: `${props.hours[0] * 2 - 14}`,
+          gridRowEnd: `${props.hours[1] * 2 - 14}`,
+        }}
+        className="cursor-pointer bg-secondary bg-opacity-60"
+        onClick={() =>
+          props.type === "pop-up" && (setOpen(true), console.log("open"))
+        }
+      >
+        <a href={props.href}>
+          <div
+            className="relative h-full w-full bg-black-100 bg-opacity-20 p-1 text-left"
+            style={{ borderTop: props.borderTop ? "1px solid" : "unset" }}
+          >
+            <p className="font-subTitle tracking-normal">{props.title}</p>
+            <p className="text-black-100 text-opacity-70">{props.subTitle}</p>
+            {/* if type is link or popup: eventlink with link or popup, if null: nothing*/}
+            {props.type === "link" ? (
+              <EventLink top={props.top} right={props.right} type="link" />
+            ) : props.type === "pop-up" ? (
+              <EventLink top={props.top} right={props.right} type="pop-up" />
+            ) : null}
+          </div>
+        </a>
+      </div>
+    </>
   );
 }
 
