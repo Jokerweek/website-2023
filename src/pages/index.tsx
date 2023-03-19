@@ -42,15 +42,6 @@ export default function Home() {
       <div className="max-w-[1200px]">
         <SponsorsLogos />
       </div>
-<<<<<<< HEAD
-=======
-      <button
-        className="absolute top-4 right-4 border p-2 text-right text-xs shadow-lg"
-        onClick={() => pass()}
-      >
-        Preview | 2de master 😍😎
-      </button>
->>>>>>> 141a88360abdccf14dbdc4f4fc221a7afe89be89
     </div>
   );
 }
