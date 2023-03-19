@@ -68,10 +68,10 @@ export default function Randactiviteiten() {
         <Event
           day={6}
           hours={[14, 15]}
-          title="Jarenstrijd"
-          subTitle="locatie"
+          title="Einde jarenstrijd"
           href="jarenstrijd"
           type="link"
+          top={true}
         />
       </Calendar>
     </SubPage>

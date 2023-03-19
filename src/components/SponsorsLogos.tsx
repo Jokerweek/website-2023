@@ -22,7 +22,6 @@ export default function SponsorsLogos() {
     recticel: "/images/logo/sponsors/recticel insulation yellow stroke.png",
     reynaers: "/images/logo/sponsors/Reynaers_staand_pos_cmyk.png",
     SBE: "/images/logo/sponsors/SBE.png",
-    sweco: "/images/logo/sponsors/sweco-black - Sofie Nauwelaerts.png",
     tenerga: "/images/logo/sponsors/TG_logo 1.png",
     vandersanden: "/images/logo/sponsors/Vandersanden.png",
     VTK: "/images/logo/sponsors/VTK.png",
@@ -44,7 +43,6 @@ export default function SponsorsLogos() {
       <Image alt="logo" height={50} width={80} src={logos.vandersanden} />
       <Image alt="logo" height={50} width={110} src={logos.gevelinzicht} />
       <Image alt="logo" height={50} width={40} src={logos.BB} />
-      <Image alt="logo" height={50} width={90} src={logos.sweco} />
       <Image alt="logo" height={50} width={140} src={logos.wienerberger} />
       <Image alt="logo" height={50} width={100} src={logos.archipelago} />
       <Image alt="logo" height={50} width={120} src={logos.awg} />

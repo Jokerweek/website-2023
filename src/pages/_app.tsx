@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import Head from "next/head";
@@ -21,15 +22,18 @@ const bodyFont = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <RecoilRoot>
+    <>
       <Head>
         <link rel="icon" href="/images/logo/Logo-Insta-fb.jpg" />
       </Head>
-      <main
-        className={`${titleFont.variable} font-sans, ${subTitleFont.variable} font-serif, ${bodyFont.variable} font-serif, font-body tracking-wider leading-tight`}
-      >
-        <Component {...pageProps} />
-      </main>
-    </RecoilRoot>
+      <RecoilRoot>
+        <main
+          className={`${titleFont.variable} font-sans, ${subTitleFont.variable} font-serif, ${bodyFont.variable} font-serif, font-body leading-tight tracking-wider`}
+        >
+          <Component {...pageProps} />
+        </main>
+      </RecoilRoot>
+      <Analytics />
+    </>
   );
 }
