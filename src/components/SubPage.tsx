@@ -66,9 +66,11 @@ function Desktop(props: SubPageProps) {
         <div className="flex justify-center gap-10">
           {/* responsive vertical column for content */}
           <div className="min-w-[200px] max-w-[600px] flex-grow">
-            <h1 className="w-min bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
-              {props.title}
-            </h1>
+            <div className="w-min bg-primary">
+              <h1 className="w-max p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
+                {props.title}
+              </h1>
+            </div>
             <div className="mt-6 text-base">{props.children}</div>
           </div>
           {/* vertical column for image */}
