@@ -2,11 +2,7 @@ import { Calendar, Event, SubPage } from "~/components";
 
 export default function Kalender() {
   return (
-    <SubPage title="Kalender" image="/images/test_1.png">
-      <h2 className="mt-5 font-subTitle text-2xl tracking-normal text-primary ">
-        TEST
-      </h2>
-      Ut sint incididunt tempor Lorem cupidatat laborum elit eu qui elit ea id.
+    <SubPage title="Kalender" image="/images/test_1.png" wide ml={25}>
       <Calendar>
         {/* licht grijs */}
 
@@ -104,7 +100,13 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">LUNCH</div>
           </div>
         </Event>
-        <Event column={3} hours={[17, 18]}>
+        <Event
+          column={3}
+          hours={[17, 18]}
+          icon="link"
+          iconColor="#a83e1d"
+          href="jarenstrijd"
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
@@ -116,7 +118,7 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">AVONDETEN</div>
           </div>
         </Event>
-        <Event column={5} hours={[9, 10]}>
+        <Event column={5} hours={[9, 10]} icon="pop-up" iconColor="#a83e1d" top>
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               OCHTEND-
@@ -125,7 +127,13 @@ export default function Kalender() {
             </div>
           </div>
         </Event>
-        <Event column={5} hours={[11, 11.5]}>
+        <Event
+          column={5}
+          hours={[11, 11.5]}
+          icon="pop-up"
+          iconColor="#a83e1d"
+          top
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
           </div>
@@ -135,7 +143,13 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">LUNCH</div>
           </div>
         </Event>
-        <Event column={5} hours={[17, 18]}>
+        <Event
+          column={5}
+          hours={[17, 18]}
+          icon="link"
+          iconColor="#a83e1d"
+          href="jarenstrijd"
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
@@ -147,7 +161,7 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">AVONDETEN</div>
           </div>
         </Event>
-        <Event column={7} hours={[9, 10]}>
+        <Event column={7} hours={[9, 10]} icon="pop-up" iconColor="#a83e1d" top>
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               OCHTEND-
@@ -156,7 +170,13 @@ export default function Kalender() {
             </div>
           </div>
         </Event>
-        <Event column={7} hours={[11, 11.5]}>
+        <Event
+          column={7}
+          hours={[11, 11.5]}
+          icon="pop-up"
+          iconColor="#a83e1d"
+          top
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
           </div>
@@ -166,7 +186,13 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">LUNCH</div>
           </div>
         </Event>
-        <Event column={7} hours={[17, 18]}>
+        <Event
+          column={7}
+          hours={[17, 18]}
+          icon="link"
+          iconColor="#a83e1d"
+          href="jarenstrijd"
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
@@ -178,7 +204,7 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">AVONDETEN</div>
           </div>
         </Event>
-        <Event column={9} hours={[9, 10]}>
+        <Event column={9} hours={[9, 10]} icon="pop-up" iconColor="#a83e1d" top>
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               OCHTEND-
@@ -187,7 +213,13 @@ export default function Kalender() {
             </div>
           </div>
         </Event>
-        <Event column={9} hours={[11, 11.5]}>
+        <Event
+          column={9}
+          hours={[11, 11.5]}
+          icon="pop-up"
+          iconColor="#a83e1d"
+          top
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
           </div>
@@ -197,7 +229,13 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">LUNCH</div>
           </div>
         </Event>
-        <Event column={9} hours={[17, 18]}>
+        <Event
+          column={9}
+          hours={[17, 18]}
+          icon="link"
+          iconColor="#a83e1d"
+          href="jarenstrijd"
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
@@ -209,12 +247,24 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">AVONDETEN</div>
           </div>
         </Event>
-        <Event column={11} hours={[11, 11.5]}>
+        <Event
+          column={11}
+          hours={[11, 11.5]}
+          icon="pop-up"
+          iconColor="#a83e1d"
+          top
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
           </div>
         </Event>
-        <Event column={11} hours={[13, 15]}>
+        <Event
+          column={11}
+          hours={[13, 15]}
+          icon="link"
+          iconColor="#a83e1d"
+          href="jarenstrijd"
+        >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="flex h-full flex-col justify-between bg-primary bg-opacity-5 p-1 pb-[2px]">
               LUNCH

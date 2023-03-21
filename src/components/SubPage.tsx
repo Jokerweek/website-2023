@@ -9,6 +9,8 @@ type SubPageProps = {
   image: string;
   children: React.ReactNode;
   back?: string;
+  wide?: boolean;
+  ml?: number;
 };
 
 // mobile layout for subpages
@@ -55,7 +57,10 @@ function Desktop(props: SubPageProps) {
   return (
     <>
       {/* baground image*/}
-      <div className="w-[100%] bg-paper bg-contain bg-repeat p-10">
+      <div
+        className="w-[100%] bg-paper bg-contain bg-repeat p-10"
+        style={{ paddingLeft: `${40 + (props.ml || 0)}px` }}
+      >
         <IconButton
           href="home"
           style={{ position: "fixed", top: "0px", left: "0px" }}
@@ -65,7 +70,10 @@ function Desktop(props: SubPageProps) {
         {/* responsive horizontal layout */}
         <div className="flex justify-center gap-10">
           {/* responsive vertical column for content */}
-          <div className="min-w-[200px] max-w-[600px] flex-grow">
+          <div
+            className="min-w-[200px] flex-grow"
+            style={{ maxWidth: props.wide ? "unset" : "600px" }}
+          >
             <div className="w-min bg-primary">
               <h1 className="w-max p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
                 {props.title}

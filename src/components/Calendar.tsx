@@ -39,7 +39,7 @@ export function EventLink(props: EventLinkProps) {
           sx={{ height: "12px", color: `${props.iconColor || "black"}` }}
         />
       ) : props.icon === "pop-up" ? (
-        <FullscreenIcon sx={{ height: "12px", color: "black" }} />
+        <FullscreenIcon sx={{ height: "12px", color: `${props.iconColor || "black"}` }} />
       ) : null}
     </IconButton>
   );
@@ -144,7 +144,7 @@ export default function Calendar(props: CalendarProps) {
       {/* scrollable calendar container */}
       <div className="absolute w-full overflow-x-auto">
         {/* grid of the calendar */}
-        <div className="mb-1 grid w-[565px] grid-cols-[repeat(11,140px)] grid-rows-[40px_repeat(35,_20px)] text-xs">
+        <div className="mb-1 grid w-[565px] grid-cols-[repeat(11,130px)] grid-rows-[40px_repeat(35,_20px)] text-xs">
           {/* background color top row  */}
           <div className="col-span-full row-start-1 bg-primary" />
           {/* days of the week | top row */}
