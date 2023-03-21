@@ -14,9 +14,10 @@ const daysOfWeek = [
 ];
 
 type EventLinkProps = {
-  type: "link" | "pop-up";
+  icon: "link" | "pop-up";
   top?: boolean;
   right?: boolean;
+  iconColor?: "#a83e1d" | "#ecdecf";
 };
 
 // component for link inside an event in the calendar
@@ -33,25 +34,27 @@ export function EventLink(props: EventLinkProps) {
         right: props.right ? "unset" : "3px",
       }}
     >
-      {props.type === "link" ? (
-        <LinkIcon sx={{ height: "12px", color: "black" }} />
-      ) : props.type === "pop-up" ? (
-        <FullscreenIcon sx={{ height: "12px", color: "black" }} />
+      {props.icon === "link" ? (
+        <LinkIcon
+          sx={{ height: "12px", color: `${props.iconColor || "black"}` }}
+        />
+      ) : props.icon === "pop-up" ? (
+        <FullscreenIcon sx={{ height: "12px", color: `${props.iconColor || "black"}` }} />
       ) : null}
     </IconButton>
   );
 }
 
 type EventProps = {
-  day: number;
+  column: number;
+  colSpan?: number;
   hours: [number, number] /** [start, end] **/;
-  title: string;
-  borderTop?: boolean;
-  subTitle?: string;
   children?: React.ReactNode;
   href?: string;
   // EventLink props:
-  type?: "link" | "pop-up" | null;
+  icon?: "link" | "pop-up" | null;
+  iconColor?: "#a83e1d" | "#ecdecf";
+  popup?: React.ReactNode;
   top?: boolean;
   right?: boolean;
 };
@@ -63,47 +66,54 @@ export function Event(props: EventProps) {
   return (
     <>
       <div style={{ display: open ? "block" : "none" }}>
-        <div className="fixed top-0 left-0 h-screen w-full bg-black-100 bg-opacity-60 flex justify-center items-center z-10">
-          <div className="m-5 relative bg-secondary bg-contain bg-repeat p-3 text-base max-w-[500px]">
+        <div className="fixed top-0 left-0 z-10 flex h-screen w-full items-center justify-center bg-black-100 bg-opacity-60">
+          <div className="relative m-5 max-w-[500px] bg-secondary bg-contain bg-repeat p-3 text-base">
             <div className="absolute top-1 right-1">
               <IconButton onClick={() => setOpen(false)}>
                 <CloseIcon />
               </IconButton>
             </div>
-            {props.children || (<p className="m-6">Come back later 😁</p>)}
+            {props.popup || <p className="m-6">Come back later 😁</p>}
           </div>
         </div>
       </div>
-      <div
+      <a
         style={{
-          gridColumnStart: `${props.day}`,
-          gridRowStart: `${props.hours[0] * 2 - 14}`,
-          gridRowEnd: `${props.hours[1] * 2 - 14}`,
+          gridColumnStart: `${props.column}`,
+          gridColumnEnd: `${props.column + (props.colSpan || 1)}`,
+          gridRowStart: `${props.hours[0] * 2 - 16}`,
+          gridRowEnd: `${props.hours[1] * 2 - 16}`,
+          cursor: props.icon === undefined ? "unset" : "pointer",
         }}
-        className="cursor-pointer bg-secondary bg-opacity-60"
-        onClick={() =>
-          props.type === "pop-up" && (setOpen(true), console.log("open"))
-        }
+        className="relative ml-[1px] tracking-normal"
+        onClick={() => props.icon === "pop-up" && setOpen(true)}
+        href={props.href}
       >
-        <a href={props.href}>
-          <div
-            className="relative h-full w-full bg-black-100 bg-opacity-20 p-1 text-left"
-            style={{ borderTop: props.borderTop ? "1px solid" : "unset" }}
-          >
-            <p className="font-subTitle tracking-normal">{props.title}</p>
-            <p className="text-black-100 text-opacity-70">{props.subTitle}</p>
-            {/* if type is link or popup: eventlink with link or popup, if null: nothing*/}
-            {props.type === "link" ? (
-              <EventLink top={props.top} right={props.right} type="link" />
-            ) : props.type === "pop-up" ? (
-              <EventLink top={props.top} right={props.right} type="pop-up" />
-            ) : null}
-          </div>
-        </a>
-      </div>
+        {props.children}
+        {/* if icon is link or popup: eventlink with link or popup, if null: nothing*/}
+        {props.icon === "link" ? (
+          <EventLink
+            top={props.top}
+            right={props.right}
+            iconColor={props.iconColor}
+            icon="link"
+          />
+        ) : props.icon === "pop-up" ? (
+          <EventLink
+            top={props.top}
+            right={props.right}
+            iconColor={props.iconColor}
+            icon="pop-up"
+          />
+        ) : null}
+      </a>
     </>
   );
 }
+
+// ----------------------------------------------
+// Calendar itself
+// ----------------------------------------------
 
 type CalendarProps = {
   children?: React.ReactNode;
@@ -111,51 +121,62 @@ type CalendarProps = {
 
 export default function Calendar(props: CalendarProps) {
   return (
-    <div className="relative h-[665px]">
+    <div className="relative h-[745px]">
       {/* fixed left column of the calendar */}
-      <div className="absolute -left-[25px] grid w-[25px] grid-rows-[25px_repeat(32,_20px)] font-subTitle text-xs tracking-normal text-primary">
-        {[...Array<number>(16)].map((_, i) => (
+      <div className="absolute -left-[25px] grid w-[25px] grid-rows-[40px_repeat(35,_20px)] font-subTitle text-xs tracking-normal text-primary">
+        {[...Array<number>(18)].map((_, i) => (
           <div
-            className="col-span-full col-start-1 border-t border-dashed p-1"
+            className="col-start-1 -m-[1px] border-y border-dashed border-primary border-t-black-100 p-1"
             style={{ gridRowStart: `${i * 2 + 2}` }}
             key={i}
           >
-            <p>{i + 8}</p>
+            <p>{("0" + ((i + 9) % 24)).slice(-2)}</p>
           </div>
         ))}
+        <div
+          className="col-span-full col-start-1 -m-[1px]  border-b border-dashed border-secondary p-1"
+          style={{ gridRowStart: "36" }}
+        />
+
+        <div className="col-start-1 row-span-full row-start-2 -mr-[1px] border-r border-dashed border-black-100" />
       </div>
+
       {/* scrollable calendar container */}
-      <div className="test absolute w-full overflow-x-auto">
+      <div className="absolute w-full overflow-x-auto">
         {/* grid of the calendar */}
-        <div className="grid w-[565px] grid-cols-[repeat(6,99px)] grid-rows-[25px_repeat(32,_20px)] text-xs">
+        <div className="mb-1 grid w-[565px] grid-cols-[repeat(11,130px)] grid-rows-[40px_repeat(35,_20px)] text-xs">
           {/* background color top row  */}
           <div className="col-span-full row-start-1 bg-primary" />
           {/* days of the week | top row */}
           {daysOfWeek.map((day, i) => (
             <div
-              className="row-span-full row-start-1 border-l border-dashed p-1 font-subTitle tracking-normal text-secondary"
-              style={{ gridColumnStart: `${i + 1}` }}
+              className="row-start-1 flex items-center justify-center border-l border-dashed p-1 pt-3 font-title text-xl tracking-widest text-secondary"
+              style={{
+                gridColumnStart: `${i * 2}`,
+                gridColumnEnd: `${i * 2 + 2}`,
+              }}
               key={day}
             >
               <h2>{day}</h2>
             </div>
           ))}
           {/* set of horirontal lines */}
-          {[...Array<number>(15)].map((_, i) => (
+          {[...Array<number>(17)].map((_, i) => (
             <div
-              className="col-span-full col-start-1 border-t border-dashed p-1"
-              style={{ gridRowStart: `${i * 2 + 4}` }}
+              className="col-span-full col-start-1 border-y border-dashed border-t-primary p-1"
+              style={{ gridRowStart: `${i * 2 + 3}` }}
               key={i}
             />
           ))}
           {/* set of vertical lines */}
-          {daysOfWeek.map((day, i) => (
+          {daysOfWeek.slice(1).map((day, i) => (
             <div
-              className="row-span-full row-start-2 border-l border-dashed p-1"
-              style={{ gridColumnStart: `${i + 1}` }}
+              className="row-span-full row-start-2 border-x border-dashed border-r-primary p-1"
+              style={{ gridColumnStart: `${(i + 1) * 2}` }}
               key={day}
             />
           ))}
+
           {/* events goes here */}
           {props.children}
         </div>
