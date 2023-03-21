@@ -62,7 +62,7 @@ export default function Kalender() {
         </Event>
         <Event column={8} colSpan={2} hours={[20, 22]}>
           <div className="flex h-full flex-col justify-between bg-black-100 bg-opacity-10 p-1 pb-[2px] font-subTitle text-primary">
-            <p>PROFFENDJ'S</p>
+            <p>PROFFENDJ&apos;S</p>
             <p className="text-right">JOHAN</p>
             <p className="text-right">RUBEN</p>
             <p className="text-right">KAAT & ROBBY</p>
