@@ -130,7 +130,7 @@ export default function Calendar(props: CalendarProps) {
             style={{ gridRowStart: `${i * 2 + 2}` }}
             key={i}
           >
-            <p>{("0" + ((i + 9) % 24)).slice(-2)}</p>
+            <p>{("0" + ((i + 9) % 24).toString()).slice(-2)}</p>
           </div>
         ))}
         <div
