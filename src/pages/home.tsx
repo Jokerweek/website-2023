@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { Footer } from "~/components";
 import { useBreakpoint } from "~/hooks";
 // import Footer from "../components/Footer";
@@ -10,13 +11,15 @@ type PinProps = {
   href: string;
   children: React.ReactNode;
   skew?: string;
+  delay?: number;
 };
 
 function Pin(props: PinProps) {
+  const [hover, setHover] = useState(false);
   return (
-    <>
+    <div>
       <Link
-        // className={`absolute z-10 border border-primary`}
+        className={`absolute z-10`}
         style={{
           top: props.box[0],
           left: props.box[1],
@@ -25,17 +28,22 @@ function Pin(props: PinProps) {
           transform: `skew(${props.skew || "0deg"})`,
         }}
         href={props.href}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
       />
       <div
+        className="animate-pop-home"
         style={{
           position: "absolute",
           top: props.box[0],
           left: props.box[1],
+          animationDelay: `${props.delay || 0}s`,
+          animationFillMode: "backwards",
         }}
       >
         {props.children}
       </div>
-    </>
+    </div>
   );
 }
 
@@ -100,6 +108,7 @@ function Desktop() {
         box={["15.1vw", "39.5vw", "7.2vw", "6vw"]}
         skew="0, 24deg"
         href="https://jw-database-code.vercel.app/"
+        delay={2}
       >
         <Image
           width={150}
@@ -113,6 +122,7 @@ function Desktop() {
         box={["25.7vw", "46.1vw", "7.2vw", "7vw"]}
         skew="0, 24deg"
         href="weekmenu"
+        delay={2.5}
       >
         <Image
           width={300}
@@ -126,6 +136,7 @@ function Desktop() {
         box={["22.5vw", "39.5vw", "7.2vw", "6vw"]}
         skew="0, 24deg"
         href="expo"
+        delay={3}
       >
         <Image
           width={220}
@@ -139,6 +150,7 @@ function Desktop() {
         box={["18vw", "46.1vw", "7.2vw", "7vw"]}
         skew="0, 24deg"
         href="opdracht"
+        delay={3.5}
       >
         <Image
           width={300}
@@ -148,10 +160,7 @@ function Desktop() {
           alt="logo"
         />
       </Pin>
-      <Pin
-        box={["28vw", "30vw", "7.2vw", "7vw"]}
-        href="huisregels"
-      >
+      <Pin box={["28vw", "30vw", "7.2vw", "7vw"]} href="huisregels" delay={4}>
         <Image
           width={300}
           height={150}
@@ -164,6 +173,7 @@ function Desktop() {
         box={["36vw", "37vw", "6vw", "15vw"]}
         skew="-60deg, 24deg"
         href="lezingen"
+        delay={4.5}
       >
         <Image
           width={300}
@@ -176,6 +186,7 @@ function Desktop() {
       <Pin
         box={["35.5vw", "65vw", "6vw", "7vw"]}
         href="randactiviteiten"
+        delay={5}
       >
         <Image
           width={500}
@@ -188,6 +199,7 @@ function Desktop() {
       <Pin
         box={["30.5vw", "76.5vw", "6vw", "14vw"]}
         href="sponsors"
+        delay={5.5}
       >
         <Image
           width={220}
@@ -197,10 +209,7 @@ function Desktop() {
           alt="logo"
         />
       </Pin>
-      <Pin
-        box={["0vw", "51vw", "13vw", "7vw"]}
-        href="radio"
-      >
+      <Pin box={["0vw", "51vw", "13vw", "7vw"]} href="radio" delay={6}>
         <Image
           width={300}
           height={150}
@@ -213,6 +222,7 @@ function Desktop() {
         box={["39vw", "20vw", "14vw", "11.5vw"]}
         skew="0deg, -35deg"
         href="kalender"
+        delay={6.5}
       >
         <Image
           width={500}
