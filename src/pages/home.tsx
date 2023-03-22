@@ -16,7 +16,7 @@ function Pin(props: PinProps) {
   return (
     <>
       <Link
-        className={`absolute z-10 border border-primary`}
+        // className={`absolute z-10 border border-primary`}
         style={{
           top: props.box[0],
           left: props.box[1],
@@ -43,8 +43,8 @@ function Mobile() {
   return (
     <div className="relative w-[100%] overflow-x-hidden">
       <Image
-        width={720}
-        height={1280}
+        width={900}
+        height={1400}
         src="/images/bg/JW Website MOBILE 21.03.png"
         alt="logo"
         className="w-screen"
@@ -90,8 +90,8 @@ function Desktop() {
   return (
     <div className="w-[100vw] overflow-hidden">
       <Image
-        width={1920}
-        height={1080}
+        width={2100}
+        height={1200}
         src="/images/bg/JW Website Desktop 21.03.png"
         alt="logo"
         className="w-screen"
@@ -102,8 +102,8 @@ function Desktop() {
         href="https://jw-database-code.vercel.app/"
       >
         <Image
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           className="w-[10vw] -translate-x-[1.7vw]"
           src="/images/bg/desktop-klikvelden/bib.png"
           alt="logo"
@@ -112,11 +112,11 @@ function Desktop() {
       <Pin
         box={["25.7vw", "46.1vw", "7.2vw", "7vw"]}
         skew="0, 24deg"
-        href="https://jw-database-code.vercel.app/"
+        href="weekmenu"
       >
         <Image
-          width={220}
-          height={100}
+          width={300}
+          height={150}
           className="w-[21.5vw] -translate-x-[7.5vw] -translate-y-[1.4vw]"
           src="/images/bg/desktop-klikvelden/weekmenu.png"
           alt="logo"
@@ -125,11 +125,11 @@ function Desktop() {
       <Pin
         box={["22.5vw", "39.5vw", "7.2vw", "6vw"]}
         skew="0, 24deg"
-        href="https://jw-database-code.vercel.app/"
+        href="expo"
       >
         <Image
-          width={150}
-          height={100}
+          width={220}
+          height={220}
           className="w-[15vw] -translate-x-[4.5vw] -translate-y-[1.3vw]"
           src="/images/bg/desktop-klikvelden/expo.png"
           alt="logo"
@@ -138,11 +138,11 @@ function Desktop() {
       <Pin
         box={["18vw", "46.1vw", "7.2vw", "7vw"]}
         skew="0, 24deg"
-        href="https://jw-database-code.vercel.app/"
+        href="opdracht"
       >
         <Image
-          width={220}
-          height={100}
+          width={300}
+          height={150}
           className="w-[20vw] -translate-x-[6.5vw] -translate-y-[0.8vw]"
           src="/images/bg/desktop-klikvelden/opdracht.png"
           alt="logo"
@@ -150,11 +150,11 @@ function Desktop() {
       </Pin>
       <Pin
         box={["28vw", "30vw", "7.2vw", "7vw"]}
-        href="https://jw-database-code.vercel.app/"
+        href="huisregels"
       >
         <Image
-          width={220}
-          height={100}
+          width={300}
+          height={150}
           className="w-[20vw] -translate-x-[6.4vw] -translate-y-[0.6vw]"
           src="/images/bg/desktop-klikvelden/huisregels.png"
           alt="logo"
@@ -163,11 +163,11 @@ function Desktop() {
       <Pin
         box={["36vw", "37vw", "6vw", "15vw"]}
         skew="-60deg, 24deg"
-        href="https://jw-database-code.vercel.app/"
+        href="lezingen"
       >
         <Image
-          width={220}
-          height={100}
+          width={300}
+          height={150}
           className="w-[22vw] -translate-x-[5.3vw] -translate-y-[5.8vw]"
           src="/images/bg/desktop-klikvelden/lezingen.png"
           alt="logo"
@@ -175,11 +175,11 @@ function Desktop() {
       </Pin>
       <Pin
         box={["35.5vw", "65vw", "6vw", "7vw"]}
-        href="https://jw-database-code.vercel.app/"
+        href="randactiviteiten"
       >
         <Image
-          width={350}
-          height={100}
+          width={500}
+          height={150}
           className="w-[32vw]  -translate-x-[12.1vw] translate-y-[0.1vw]"
           src="/images/bg/desktop-klikvelden/randactiviteiten.png"
           alt="logo"
@@ -187,11 +187,11 @@ function Desktop() {
       </Pin>
       <Pin
         box={["30.5vw", "76.5vw", "6vw", "14vw"]}
-        href="https://jw-database-code.vercel.app/"
+        href="sponsors"
       >
         <Image
-          width={200}
-          height={100}
+          width={220}
+          height={150}
           className="w-[19vw] -translate-x-[2.5vw] translate-y-[0.1vw]"
           src="/images/bg/desktop-klikvelden/sponsors.png"
           alt="logo"
@@ -199,11 +199,11 @@ function Desktop() {
       </Pin>
       <Pin
         box={["0vw", "51vw", "13vw", "7vw"]}
-        href="https://jw-database-code.vercel.app/"
+        href="radio"
       >
         <Image
-          width={180}
-          height={200}
+          width={300}
+          height={150}
           className="w-[16.6vw] -translate-x-[5.6vw] translate-y-[0.7vw]"
           src="/images/bg/desktop-klikvelden/radio.png"
           alt="logo"
@@ -212,11 +212,11 @@ function Desktop() {
       <Pin
         box={["39vw", "20vw", "14vw", "11.5vw"]}
         skew="0deg, -35deg"
-        href="https://jw-database-code.vercel.app/"
+        href="kalender"
       >
         <Image
-          width={300}
-          height={100}
+          width={500}
+          height={150}
           className="w-[27vw] -translate-x-[7vw] -translate-y-[2.9vw]"
           src="/images/bg/desktop-klikvelden/kalender.png"
           alt="logo"
