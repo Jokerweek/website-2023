@@ -4,6 +4,7 @@ import Scores from "./Scores";
 import SponsorsLogos from "./SponsorsLogos";
 import SubPage from "./SubPage";
 import Timer from "./Timer";
+import Pin from "./Pin";
 
 export {
     SubPage,
@@ -14,5 +15,6 @@ export {
     EventLink,
     Scores,
     SponsorsLogos,
+    Pin,
 };
 

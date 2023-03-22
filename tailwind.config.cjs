@@ -8,6 +8,18 @@ module.exports = {
       "black-100": "#000000",
     },
     extend: {
+      keyframes: {
+        "pop-home": {
+          "0%": { opacity: 0 },
+          "3%": { opacity: 1 },
+          "10%": { opacity: 1 },
+          "15%": { opacity: 0 },
+          "100%": { opacity: 0 },
+        },
+      },
+      animation: {
+        "pop-home": "pop-home 6s ease-in-out infinite",
+      },
       listStyleType: {
         square: "square",
       },

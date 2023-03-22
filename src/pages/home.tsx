@@ -1,40 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Footer } from "~/components";
+import { Footer, Pin } from "~/components";
 import { useBreakpoint } from "~/hooks";
-// import Footer from "../components/Footer";
-// import mobile from "../recoil/mobile";
-
-type PinProps = {
-  box: string[]; // [top, left, height, width]
-  href: string;
-  children: string;
-};
-
-function Pin(props: PinProps) {
-  return (
-    <Link
-      className={`absolute border`}
-      style={{
-        top: props.box[0],
-        left: props.box[1],
-        height: props.box[2],
-        width: props.box[3],
-      }}
-      href={props.href}
-    >
-      {props.children}
-    </Link>
-  );
-}
 
 function Mobile() {
   return (
     <div className="relative w-[100%] overflow-x-hidden">
       <Image
-        width={720}
-        height={1280}
-        src="/images/bg/JW-Regard-Website-v1-MOBILE.jpg"
+        width={900}
+        height={1400}
+        src="/images/bg/JW Website MOBILE 21.03.png"
         alt="logo"
         className="w-screen"
       />
@@ -77,49 +51,141 @@ function Mobile() {
 
 function Desktop() {
   return (
-    <div className="relative w-[100%] overflow-hidden">
+    <div className="w-[100vw] overflow-hidden">
       <Image
-        width={1920}
-        height={1080}
-        src="/images/bg/JW-Regard-Website-v4-PC.jpg"
+        width={2100}
+        height={1200}
+        src="/images/bg/JW Website Desktop 21.03.png"
         alt="logo"
         className="w-screen"
       />
-      <Pin box={["1.2vw", "46vw", "14vw", "11vw"]} href="home">
-        radio
-      </Pin>
-      <Pin box={["44vw", "20vw", "12vw", "10vw"]} href="huisregels">
-        huisregels
-      </Pin>
-      <Pin box={["32.5vw", "78vw", "12vw", "12vw"]} href="sponsors">
-        sponsors
-      </Pin>
-      <Pin box={["51vw", "79vw", "5vw", "18vw"]} href="home">
-        home
-      </Pin>
-      <Pin box={["25vw", "23vw", "10vw", "15vw"]} href="kalender">
-        kalender
-      </Pin>
-      <Pin box={["19vw", "83vw", "12vw", "12vw"]} href="randactiviteiten">
-        randactiviteiten
+      <Pin
+        box={["15.1vw", "39.5vw", "7.2vw", "6vw"]}
+        skew="0, 24deg"
+        href="https://jw-database-code.vercel.app/"
+        delay={2}
+      >
+        <Image
+          width={150}
+          height={150}
+          className="w-[10vw] -translate-x-[1.7vw]"
+          src="/images/bg/desktop-klikvelden/bib.png"
+          alt="logo"
+        />
       </Pin>
       <Pin
-        box={["23vw", "39vw", "5vw", "6vw"]}
-        href="https://jw-database-code.vercel.app/"
+        box={["25.7vw", "46.1vw", "7.2vw", "7vw"]}
+        skew="0, 24deg"
+        href="weekmenu"
+        delay={2.5}
       >
-        bib
+        <Image
+          width={300}
+          height={150}
+          className="w-[21.5vw] -translate-x-[7.5vw] -translate-y-[1.4vw]"
+          src="/images/bg/desktop-klikvelden/weekmenu.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["26vw", "47vw", "5vw", "6vw"]} href="opdracht">
-        opdracht
+      <Pin
+        box={["22.5vw", "39.5vw", "7.2vw", "6vw"]}
+        skew="0, 24deg"
+        href="expo"
+        delay={3}
+      >
+        <Image
+          width={220}
+          height={220}
+          className="w-[15vw] -translate-x-[4.5vw] -translate-y-[1.3vw]"
+          src="/images/bg/desktop-klikvelden/expo.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["30vw", "39vw", "5vw", "6vw"]} href="expo">
-        expo (kaart)
+      <Pin
+        box={["18vw", "46.1vw", "7.2vw", "7vw"]}
+        skew="0, 24deg"
+        href="opdracht"
+        delay={3.5}
+      >
+        <Image
+          width={300}
+          height={150}
+          className="w-[20vw] -translate-x-[6.5vw] -translate-y-[0.8vw]"
+          src="/images/bg/desktop-klikvelden/opdracht.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["33vw", "47vw", "5vw", "10vw"]} href="weekmenu">
-        weekmenu
+      <Pin box={["28vw", "30vw", "7.2vw", "7vw"]} href="huisregels" delay={4}>
+        <Image
+          width={300}
+          height={150}
+          className="w-[20vw] -translate-x-[6.4vw] -translate-y-[0.6vw]"
+          src="/images/bg/desktop-klikvelden/huisregels.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["39vw", "33vw", "10vw", "20vw"]} href="lezingen">
-        lezingen
+      <Pin
+        box={["36vw", "37vw", "6vw", "15vw"]}
+        skew="-60deg, 24deg"
+        href="lezingen"
+        delay={4.5}
+      >
+        <Image
+          width={300}
+          height={150}
+          className="w-[22vw] -translate-x-[5.3vw] -translate-y-[5.8vw]"
+          src="/images/bg/desktop-klikvelden/lezingen.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin
+        box={["35.5vw", "65vw", "6vw", "7vw"]}
+        href="randactiviteiten"
+        delay={5}
+      >
+        <Image
+          width={500}
+          height={150}
+          className="w-[32vw]  -translate-x-[12.1vw] translate-y-[0.1vw]"
+          src="/images/bg/desktop-klikvelden/randactiviteiten.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin
+        box={["30.5vw", "76.5vw", "6vw", "14vw"]}
+        href="sponsors"
+        delay={5.5}
+      >
+        <Image
+          width={220}
+          height={150}
+          className="w-[19vw] -translate-x-[2.5vw] translate-y-[0.1vw]"
+          src="/images/bg/desktop-klikvelden/sponsors.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin box={["0vw", "51vw", "13vw", "7vw"]} href="radio" delay={6}>
+        <Image
+          width={300}
+          height={150}
+          className="w-[16.6vw] -translate-x-[5.6vw] translate-y-[0.7vw]"
+          src="/images/bg/desktop-klikvelden/radio.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin
+        box={["39vw", "20vw", "14vw", "11.5vw"]}
+        skew="0deg, -35deg"
+        href="kalender"
+        delay={6.5}
+      >
+        <Image
+          width={500}
+          height={150}
+          className="w-[27vw] -translate-x-[7vw] -translate-y-[2.9vw]"
+          src="/images/bg/desktop-klikvelden/kalender.png"
+          alt="logo"
+        />
       </Pin>
     </div>
   );
@@ -139,7 +205,10 @@ export default function Home() {
   } else {
     return (
       <>
-        <Desktop />
+        <div className="overflow-hidden">
+          <Desktop />
+        </div>
+
         <Footer />
       </>
     );
