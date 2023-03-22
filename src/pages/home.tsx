@@ -8,7 +8,7 @@ function Mobile() {
       <Image
         width={900}
         height={1400}
-        src="/images/bg/JW Website MOBILE 21.03.png"
+        src="/images/bg/JWMobile.png"
         alt="logo"
         className="w-screen"
       />
@@ -55,7 +55,7 @@ function Desktop() {
       <Image
         width={2100}
         height={1200}
-        src="/images/bg/JW Website Desktop 21.03.png"
+        src="/images/bg/JWDesktop.png"
         alt="logo"
         className="w-screen"
       />
@@ -69,7 +69,7 @@ function Desktop() {
           width={150}
           height={150}
           className="w-[10vw] -translate-x-[1.7vw]"
-          src="/images/bg/desktop-klikvelden/bib.png"
+          src="/images/bg/desktopKlikvelden/Bib.png"
           alt="logo"
         />
       </Pin>
@@ -83,7 +83,7 @@ function Desktop() {
           width={300}
           height={150}
           className="w-[21.5vw] -translate-x-[7.5vw] -translate-y-[1.4vw]"
-          src="/images/bg/desktop-klikvelden/weekmenu.png"
+          src="/images/bg/desktopKlikvelden/Weekmenu.png"
           alt="logo"
         />
       </Pin>
@@ -97,7 +97,7 @@ function Desktop() {
           width={220}
           height={220}
           className="w-[15vw] -translate-x-[4.5vw] -translate-y-[1.3vw]"
-          src="/images/bg/desktop-klikvelden/expo.png"
+          src="/images/bg/desktopKlikvelden/Expo.png"
           alt="logo"
         />
       </Pin>
@@ -111,7 +111,7 @@ function Desktop() {
           width={300}
           height={150}
           className="w-[20vw] -translate-x-[6.5vw] -translate-y-[0.8vw]"
-          src="/images/bg/desktop-klikvelden/opdracht.png"
+          src="/images/bg/desktopKlikvelden/Opdracht.png"
           alt="logo"
         />
       </Pin>
@@ -120,7 +120,7 @@ function Desktop() {
           width={300}
           height={150}
           className="w-[20vw] -translate-x-[6.4vw] -translate-y-[0.6vw]"
-          src="/images/bg/desktop-klikvelden/huisregels.png"
+          src="/images/bg/desktopKlikvelden/Huisregels.png"
           alt="logo"
         />
       </Pin>
@@ -134,7 +134,7 @@ function Desktop() {
           width={300}
           height={150}
           className="w-[22vw] -translate-x-[5.3vw] -translate-y-[5.8vw]"
-          src="/images/bg/desktop-klikvelden/lezingen.png"
+          src="/images/bg/desktopKlikvelden/Lezingen.png"
           alt="logo"
         />
       </Pin>
@@ -147,7 +147,7 @@ function Desktop() {
           width={500}
           height={150}
           className="w-[32vw]  -translate-x-[12.1vw] translate-y-[0.1vw]"
-          src="/images/bg/desktop-klikvelden/randactiviteiten.png"
+          src="/images/bg/desktopKlikvelden/Randactiviteiten.png"
           alt="logo"
         />
       </Pin>
@@ -160,7 +160,7 @@ function Desktop() {
           width={220}
           height={150}
           className="w-[19vw] -translate-x-[2.5vw] translate-y-[0.1vw]"
-          src="/images/bg/desktop-klikvelden/sponsors.png"
+          src="/images/bg/desktopKlikvelden/Sponsors.png"
           alt="logo"
         />
       </Pin>
@@ -169,7 +169,7 @@ function Desktop() {
           width={300}
           height={150}
           className="w-[16.6vw] -translate-x-[5.6vw] translate-y-[0.7vw]"
-          src="/images/bg/desktop-klikvelden/radio.png"
+          src="/images/bg/desktopKlikvelden/Radio.png"
           alt="logo"
         />
       </Pin>
@@ -183,7 +183,7 @@ function Desktop() {
           width={500}
           height={150}
           className="w-[27vw] -translate-x-[7vw] -translate-y-[2.9vw]"
-          src="/images/bg/desktop-klikvelden/kalender.png"
+          src="/images/bg/desktopKlikvelden/Kalender.png"
           alt="logo"
         />
       </Pin>
