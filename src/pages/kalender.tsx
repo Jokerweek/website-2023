@@ -260,7 +260,7 @@ export default function Kalender() {
         </Event>
         <Event
           column={11}
-          hours={[13, 15]}
+          hours={[12, 15]}
           icon="link"
           iconColor="#a83e1d"
           href="jarenstrijd"
@@ -268,7 +268,9 @@ export default function Kalender() {
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="flex h-full flex-col justify-between bg-primary bg-opacity-5 p-1 pb-[2px]">
               LUNCH
-              <p className="text-right">+ PLANTENVEILING</p>
+              <div className="h-4"/>
+              PLANTENVEILING
+              <div className="h-4"/>
               <p>EINDE</p>
               <p>JARENSTRIJD</p>
             </div>
