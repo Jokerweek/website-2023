@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       animation: {
-        "pop-home": "pop-home 6s ease-in-out infinite",
+        "pop-home": "pop-home 10s ease-in-out",
       },
       listStyleType: {
         square: "square",
