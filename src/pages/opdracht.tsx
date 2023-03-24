@@ -17,7 +17,7 @@ function Group({ title, names }: GroupProps) {
       <h3 className="ml-4 font-subTitle text-lg">{title}</h3>
       <ul className="list-inside list-square">
         {names.map((name) => (
-          <li>{name}</li>
+          <li key={name}>{name}</li>
         ))}
       </ul>
     </div>
@@ -42,7 +42,7 @@ export default function Opdracht() {
 
         <AccordionDetails className="-mx-8 flex flex-wrap justify-center gap-3">
           {Object.entries(groups).map(([title, names]) => (
-            <Group title={title} names={names} />
+            <Group key={title} title={title} names={names} />
           ))}
         </AccordionDetails>
       </Accordion>

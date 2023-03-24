@@ -52,7 +52,7 @@ export default function Lezing(props: LezingProps) {
       {props.children}
       <div className="flex flex-wrap gap-3">
         {props.guests.map((guest) => (
-          <Guest name={guest.name} description={guest.description} />
+          <Guest key={guest.name} name={guest.name} description={guest.description} />
         ))}
       </div>
     </>
