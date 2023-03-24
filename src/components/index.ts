@@ -5,6 +5,7 @@ import SponsorsLogos from "./SponsorsLogos";
 import SubPage from "./SubPage";
 import Timer from "./Timer";
 import Pin from "./Pin";
+import Lezing from "./Lezing";
 
 export {
     SubPage,
@@ -16,5 +17,6 @@ export {
     Scores,
     SponsorsLogos,
     Pin,
+    Lezing,
 };
 

@@ -6,7 +6,7 @@ type PinProps = {
   href: string;
   children: React.ReactNode;
   skew?: string;
-  delay?: number;
+  order?: number;
 };
 
 export default function Pin(props: PinProps) {
@@ -39,12 +39,13 @@ export default function Pin(props: PinProps) {
       ) : null}
       <div
         className="animate-pop-home"
+        id="homeAnim"
         style={{
+          opacity: "0",
           position: "absolute",
           top: props.box[0],
           left: props.box[1],
-          animationDelay: `${props.delay || 0}s`,
-          animationFillMode: "backwards",
+          animationDelay: `${props.order || 0}s`,
         }}
       >
         {props.children}
