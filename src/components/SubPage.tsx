@@ -18,20 +18,20 @@ function Mobile(props: SubPageProps) {
   const { back = "home" } = props;
   return (
     <>
+      {/* back button */}
+      <IconButton
+        href={back}
+        style={{ position: "fixed", top: "0px", left: "0px" }}
+      >
+        <ArrowBackIcon />
+      </IconButton>
       {/* baground image | horizontal centering of everything */}
       <div className="flex w-[100%] flex-col items-center gap-6 bg-paper bg-contain bg-repeat p-10">
-        <IconButton
-          href={back}
-          style={{ position: "fixed", top: "0px", left: "0px" }}
-        >
-          <ArrowBackIcon />
-        </IconButton>
-
         <Image
           src={props.image}
           width={300}
           height={200}
-          className="max-w-[70vw]"
+          className="max-h-[300px] max-w-[70vw] h-auto w-auto"
           alt="Doorklik afbeelding"
         />
         <h1 className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
