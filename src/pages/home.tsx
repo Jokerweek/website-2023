@@ -1,9 +1,8 @@
+import ReplayIcon from "@mui/icons-material/Replay";
+import { IconButton } from "@mui/material";
 import Image from "next/image";
 import { Footer, Pin } from "~/components";
 import { useBreakpoint } from "~/hooks";
-import InfoIcon from "@mui/icons-material/Info";
-import { IconButton } from "@mui/material";
-import ReplayIcon from "@mui/icons-material/Replay";
 
 function Mobile() {
   function handleAnim() {
