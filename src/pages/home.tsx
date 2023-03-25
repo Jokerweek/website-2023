@@ -3,8 +3,19 @@ import { Footer, Pin } from "~/components";
 import { useBreakpoint } from "~/hooks";
 import InfoIcon from "@mui/icons-material/Info";
 import { IconButton } from "@mui/material";
+import ReplayIcon from "@mui/icons-material/Replay";
 
 function Mobile() {
+  function handleAnim() {
+    const homeAnim = document.querySelectorAll(".animate-pop-home");
+    homeAnim.forEach((img) => {
+      img?.classList.remove("animate-pop-home");
+      setTimeout(() => {
+        img?.classList.add("animate-pop-home");
+      }, 0);
+    });
+  }
+
   return (
     <div className="relative w-[100%] overflow-x-hidden">
       <Image
@@ -14,38 +25,140 @@ function Mobile() {
         alt="logo"
         className="w-screen"
       />
-      <Pin box={["67vw", "51vw", "20vw", "17vw"]} href="home">
-        radio
-      </Pin>
-      <Pin box={["101vw", "11vw", "13vw", "23vw"]} href="huisregels">
-        huisregels
-      </Pin>
-      <Pin box={["117vw", "2vw", "13vw", "13vw"]} href="sponsors">
-        sponsors
-      </Pin>
-      <Pin box={["137vw", "5vw", "20vw", "18vw"]} href="kalender">
-        kalender
-      </Pin>
-      <Pin box={["152vw", "24vw", "24vw", "24vw"]} href="randactiviteiten">
-        randactiviteiten
+      <div className="fixed top-0 right-0 rounded-bl-3xl bg-[white] p-1">
+        <IconButton onClick={handleAnim}>
+          <ReplayIcon />
+        </IconButton>
+      </div>
+
+      <Pin
+        box={["96vw", "37.3vw", "11vw", "9vw"]}
+        skew="0, 24deg"
+        href="https://jw-database-code.vercel.app/"
+        order={1}
+      >
+        <Image
+          width={150}
+          height={150}
+          className="w-[15vw] -translate-x-[2.7vw] translate-y-[0.2vw]"
+          src="/images/bg/mobielKlikvelden/Bib.png"
+          alt="logo"
+        />
       </Pin>
       <Pin
-        box={["100vw", "38vw", "5vw", "7vw"]}
-        href="https://jw-database-code.vercel.app/"
+        box={["112.5vw", "47vw", "11vw", "10.6vw"]}
+        skew="0, 24deg"
+        href="weekmenu"
+        order={2}
       >
-        bib
+        <Image
+          width={300}
+          height={150}
+          className="w-[32.4vw] -translate-x-[11vw] -translate-y-[1.9vw]"
+          src="/images/bg/mobielKlikvelden/Weekmenu.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["104vw", "48vw", "5vw", "8vw"]} href="opdracht">
-        opdracht
+      <Pin
+        box={["107.5vw", "37.5vw", "11vw", "9vw"]}
+        skew="0, 24deg"
+        href="expo"
+        order={3}
+      >
+        <Image
+          width={220}
+          height={220}
+          className="w-[23vw] -translate-x-[7.5vw] -translate-y-[1.9vw]"
+          src="/images/bg/mobielKlikvelden/Expo.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["110vw", "38vw", "5vw", "7vw"]} href="expo">
-        expo (kaart)
+      <Pin
+        box={["101vw", "47vw", "11vw", "10.6vw"]}
+        skew="0, 24deg"
+        href="opdracht"
+        order={4}
+      >
+        <Image
+          width={300}
+          height={150}
+          className="w-[30.2vw] -translate-x-[9.5vw] -translate-y-[1.2vw]"
+          src="/images/bg/mobielKlikvelden/Opdracht.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["114vw", "48vw", "5vw", "20vw"]} href="weekmenu">
-        weekmenu
+      <Pin
+        box={["117vw", "22vw", "11vw", "10.6vw"]}
+        href="huisregels"
+        order={5}
+      >
+        <Image
+          width={300}
+          height={150}
+          className="w-[31vw] -translate-x-[9.5vw] -translate-y-[2vw]"
+          src="/images/bg/mobielKlikvelden/Huisregels.png"
+          alt="logo"
+        />
       </Pin>
-      <Pin box={["124vw", "30vw", "15vw", "25vw"]} href="lezingen">
-        lezingen
+      <Pin
+        box={["128vw", "33vw", "9.1vw", "22.6vw"]}
+        skew="-60deg, 24deg"
+        href="lezingen"
+        order={6}
+      >
+        <Image
+          width={300}
+          height={150}
+          className="w-[34vw] -translate-x-[8vw] -translate-y-[8vw]"
+          src="/images/bg/mobielKlikvelden/Lezingen.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin
+        box={["155vw", "17vw", "30vw", "30vw"]}
+        skew="0deg, -35deg"
+        href="randactiviteiten"
+        order={7}
+      >
+        <Image
+          width={500}
+          height={150}
+          className="w-[48.3vw]  -translate-x-[7vw] -translate-y-[6vw]"
+          src="/images/bg/mobielKlikvelden/Randactiviteiten.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin box={["111vw", "1vw", "7vw", "18vw"]} href="sponsors" order={8}>
+        <Image
+          width={220}
+          height={150}
+          className="w-[32vw] -translate-y-[3vw]"
+          src="/images/bg/mobielKlikvelden/Sponsors.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin box={["67vw", "58vw", "23vw", "10.6vw"]} href="radio" order={9}>
+        <Image
+          width={300}
+          height={150}
+          className="w-[27vw] -translate-x-[10.5vw] translate-y-[4vw]"
+          src="/images/bg/mobielKlikvelden/Radio.png"
+          alt="logo"
+        />
+      </Pin>
+      <Pin
+        box={["135vw", "6vw", "21vw", "17.4vw"]}
+        skew="0deg, -35deg"
+        href="kalender"
+        order={10}
+      >
+        <Image
+          width={500}
+          height={150}
+          className="w-[42vw] -translate-x-[5vw] -translate-y-[6vw]"
+          src="/images/bg/mobielKlikvelden/Kalender.png"
+          alt="logo"
+        />
       </Pin>
     </div>
   );
@@ -71,17 +184,11 @@ function Desktop() {
         alt="logo"
         className="w-screen"
       />
-      <IconButton
-        sx={{
-          color: "white",
-          position: "absolute",
-          right: "0.25rem",
-          top: "0.25rem",
-        }}
-        onClick={handleAnim}
-      >
-        <InfoIcon />
-      </IconButton>
+      <div className="fixed top-0 right-0 rounded-bl-3xl bg-[white] p-1">
+        <IconButton onClick={handleAnim}>
+          <ReplayIcon />
+        </IconButton>
+      </div>
       <Pin
         box={["15.1vw", "39.5vw", "7.2vw", "6vw"]}
         skew="0, 24deg"
@@ -213,10 +320,8 @@ export default function Home() {
   if (useBreakpoint()) {
     return (
       <>
-        <div className="flex h-screen w-[100%] items-center overflow-hidden">
-          <div className="relative -translate-y-[15vw]">
-            <Mobile />
-          </div>
+        <div className="w-[100%] overflow-hidden">
+          <Mobile />
         </div>
         <Footer />
       </>
@@ -227,7 +332,6 @@ export default function Home() {
         <div className="overflow-hidden">
           <Desktop />
         </div>
-
         <Footer />
       </>
     );
