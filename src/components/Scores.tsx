@@ -20,8 +20,9 @@ function Flag(props: FlagProps) {
           curvature={35}
         />
       </div>
-
-      {props.title}
+      <h4 className="font-subTitle">
+        {props.title}
+      </h4>      
     </div>
   );
 }
@@ -37,7 +38,7 @@ type ScoresProps = {
 export default function Scores(props: ScoresProps) {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex -translate-x-4 my-3">
         <div className="grid min-w-[300px] grid-cols-5">
           <Flag score={props.BA1} title="BA1" />
           <Flag score={props.BA2} title="BA2" />

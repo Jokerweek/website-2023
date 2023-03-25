@@ -39,7 +39,9 @@ export function EventLink(props: EventLinkProps) {
           sx={{ height: "12px", color: `${props.iconColor || "black"}` }}
         />
       ) : props.icon === "pop-up" ? (
-        <FullscreenIcon sx={{ height: "12px", color: `${props.iconColor || "black"}` }} />
+        <FullscreenIcon
+          sx={{ height: "12px", color: `${props.iconColor || "black"}` }}
+        />
       ) : null}
     </IconButton>
   );
@@ -66,14 +68,14 @@ export function Event(props: EventProps) {
   return (
     <>
       <div style={{ display: open ? "block" : "none" }}>
-        <div className="fixed top-0 left-0 z-10 flex h-screen w-full items-center justify-center bg-black-100 bg-opacity-60">
-          <div className="relative m-5 max-w-[500px] bg-secondary bg-contain bg-repeat p-3 text-base">
+        <div className="fixed  top-0 left-0 z-10 flex h-screen w-full items-center justify-center bg-black-100 bg-opacity-60">
+          <div className="relative m-5 max-h-[90vh] max-w-[500px] overflow-y-scroll bg-secondary bg-contain bg-repeat p-3 text-base">
             <div className="absolute top-1 right-1">
               <IconButton onClick={() => setOpen(false)}>
                 <CloseIcon />
               </IconButton>
             </div>
-            {props.popup || <p className="m-6">Come back later 😁</p>}
+            {props.popup || <p className="m-6">Reval at 12:00 😁</p>}
           </div>
         </div>
       </div>

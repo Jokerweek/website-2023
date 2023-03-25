@@ -49,6 +49,7 @@ export default function Footer() {
       </div>
       <div className="mt-6 text-center text-sm">
         Jokerweek 2023 - Team Digitaal
+        <p className="text-[9px]">Philippe Soubrier</p>
       </div>
     </footer>
   );
