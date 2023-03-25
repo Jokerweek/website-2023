@@ -2,11 +2,11 @@ import { Scores, SubPage } from "~/components";
 
 export default function Randactiviteiten() {
   return (
-    <SubPage title="Randactiviteiten" image="/images/bg/doorklik/randactiviteiten.png">
-      <h2
-        id="jarenstrijd"
-        className="mt-5 scroll-mt-20 font-subTitle text-2xl tracking-normal text-primary"
-      >
+    <SubPage
+      title="Randactiviteiten"
+      image="/images/bg/doorklik/randactiviteiten.png"
+    >
+      <h2 className="mt-5 font-subTitle text-2xl tracking-normal text-primary">
         JARENSTRIJD
       </h2>
       <h3 className="my-1 font-subTitle text-lg tracking-normal">
@@ -33,19 +33,13 @@ export default function Randactiviteiten() {
         zelf per dag:
         <br /> To be announced
       </div>
-      <h2
-        id="ochtendactiviteit"
-        className="mt-5 scroll-mt-20 font-subTitle text-2xl tracking-normal text-primary"
-      >
+      <h2 className="mt-5 font-subTitle text-2xl tracking-normal text-primary">
         OCHTENDACTIVITET
       </h2>
       <a className="underline underline-offset-2" href="kalender">
         Zie kalender
       </a>
-      <h2
-        id="zoekspel"
-        className="mt-5 scroll-mt-20 font-subTitle text-2xl tracking-normal text-primary"
-      >
+      <h2 className="mt-5 font-subTitle text-2xl tracking-normal text-primary">
         ZOEKSPEL
       </h2>
       Radio aan, inclusief gaan,
