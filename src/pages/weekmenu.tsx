@@ -5,10 +5,6 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Image from "next/image";
 import { SubPage } from "~/components";
 
-function Space() {
-  return <hr className="my-3 border-dashed" />;
-}
-
 export default function Weekmenu() {
   return (
     <SubPage title="Weekmenu" image="/images/bg/doorklik/weekmenu.png">
