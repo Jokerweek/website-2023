@@ -14,8 +14,9 @@ export default function Pin(props: PinProps) {
   return (
     <>
       <Link
-        className={`absolute z-10`}
+        className="absolute z-10"
         style={{
+          // border: "1px solid red",
           top: props.box[0],
           left: props.box[1],
           height: props.box[2],

@@ -110,7 +110,8 @@ export default function Kalender() {
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
-            </div>
+              {/* locatie maandag ... */}
+            </div>            
           </div>
         </Event>
         <Event column={3} hours={[19.5, 20.5]}>
@@ -201,6 +202,7 @@ export default function Kalender() {
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
+              {/* locatie dinsdag ... */}
             </div>
           </div>
         </Event>
@@ -298,6 +300,7 @@ export default function Kalender() {
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
+              {/* locatie woensdag ... */}
             </div>
           </div>
         </Event>
@@ -382,6 +385,7 @@ export default function Kalender() {
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
+              {/* locatie donderdag ... */}
             </div>
           </div>
         </Event>

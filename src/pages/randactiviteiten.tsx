@@ -67,10 +67,7 @@ export default function Randactiviteiten() {
         <br /> Naar een stad voor iedereen
         <br /> Met inclusiviteit en architectuur
         <br /> Zal het er zoveel mooier zijn, meteen.
-        <br /> <br />
       </div>
-      Radio aan, inclusief gaan,
-      <br /> Tips onthullen de stad haar geheimen baan voor baan.
       <br /> Credits: Chat GPT
       <h4 className="mt-2 mb-1 font-subTitle text-lg tracking-normal">
         Dinsdag
