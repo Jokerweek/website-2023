@@ -105,7 +105,7 @@ export default function Kalender() {
           hours={[17, 18]}
           icon="link"
           iconColor="#a83e1d"
-          href="randactiviteiten#jarenstrijd"
+          href="randactiviteiten"
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
@@ -196,7 +196,7 @@ export default function Kalender() {
           hours={[17, 18]}
           icon="link"
           iconColor="#a83e1d"
-          href="jarenstrijd"
+          href="randactiviteiten"
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
@@ -293,7 +293,7 @@ export default function Kalender() {
           hours={[17, 18]}
           icon="link"
           iconColor="#a83e1d"
-          href="jarenstrijd"
+          href="randactiviteiten"
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
@@ -377,7 +377,7 @@ export default function Kalender() {
           hours={[17, 18]}
           icon="link"
           iconColor="#a83e1d"
-          href="jarenstrijd"
+          href="randactiviteiten"
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">
@@ -419,7 +419,7 @@ export default function Kalender() {
           hours={[12, 15]}
           icon="link"
           iconColor="#a83e1d"
-          href="jarenstrijd"
+          href="randactiviteiten"
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="flex h-full flex-col justify-between bg-primary bg-opacity-5 p-1 pb-[2px]">
