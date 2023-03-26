@@ -7,6 +7,7 @@ type PinProps = {
   children: React.ReactNode;
   skew?: string;
   order?: number;
+  infinite?: boolean;
 };
 
 export default function Pin(props: PinProps) {
@@ -40,13 +41,14 @@ export default function Pin(props: PinProps) {
       ) : null}
       <div
         className="animate-pop-home"
-        id="homeAnim"
+
         style={{
           opacity: "0",
           position: "absolute",
           top: props.box[0],
           left: props.box[1],
           animationDelay: `${props.order || 0}s`,
+          animationIterationCount: props.infinite ? "infinite" : "1",
         }}
       >
         {props.children}
