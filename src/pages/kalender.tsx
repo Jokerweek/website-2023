@@ -446,6 +446,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={2}
           colSpan={2}
           hours={[18, 19.5]}
@@ -459,6 +460,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={4}
           colSpan={2}
           hours={[18, 19.5]}
@@ -472,6 +474,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={6}
           colSpan={2}
           hours={[18, 19.5]}
@@ -485,6 +488,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={8}
           colSpan={2}
           hours={[18, 19.5]}
@@ -498,6 +502,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={10}
           colSpan={2}
           hours={[16, 18]}
@@ -517,6 +522,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={2}
           colSpan={2}
           hours={[11, 12.5]}
@@ -530,6 +536,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={4}
           colSpan={2}
           hours={[13, 14.5]}
@@ -549,6 +556,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={6}
           colSpan={2}
           hours={[13, 14.5]}
@@ -568,6 +576,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
+        href="lezingen"
           column={8}
           colSpan={2}
           hours={[13, 15.5]}

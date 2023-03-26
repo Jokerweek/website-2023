@@ -1,4 +1,4 @@
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ReplayIcon from "@mui/icons-material/Replay";
 import { IconButton } from "@mui/material";
 import Image from "next/image";
@@ -137,7 +137,7 @@ function Mobile() {
       <Pin
         infinite
         box={["67vw", "58vw", "23vw", "10.6vw"]}
-        href="radio"
+        href="https://www.mixcloud.com/jokerweek2023/"
         order={9}
       >
         <Image
@@ -293,7 +293,11 @@ function Desktop() {
           alt="logo"
         />
       </Pin>
-      <Pin box={["0vw", "51vw", "13vw", "7vw"]} href="radio" order={9}>
+      <Pin
+        box={["0vw", "51vw", "13vw", "7vw"]}
+        href="https://www.mixcloud.com/jokerweek2023/"
+        order={9}
+      >
         <Image
           width={300}
           height={150}
@@ -326,7 +330,7 @@ export default function Home() {
         <div className="w-[100%] overflow-hidden">
           <Mobile />
         </div>
-        <div className="sticky -translate-y-10 h-0 animate-arrow-home text-right text-[white]">
+        <div className="sticky h-0 -translate-y-10 animate-arrow-home text-right text-[white]">
           <ExpandMoreIcon sx={{ height: "50px", width: "50px" }} />
         </div>
         <Footer />
@@ -338,7 +342,7 @@ export default function Home() {
         <div className="overflow-hidden">
           <Desktop />
         </div>
-        <div className="sticky -translate-y-10 h-0 animate-arrow-home text-right text-[white]">
+        <div className="sticky h-0 -translate-y-10 animate-arrow-home text-right text-[white]">
           <ExpandMoreIcon sx={{ height: "50px", width: "50px" }} />
         </div>
         <Footer />

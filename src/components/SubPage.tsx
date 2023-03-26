@@ -11,6 +11,7 @@ type SubPageProps = {
   back?: string;
   wide?: boolean;
   ml?: number;
+  maxWidth?: string;
 };
 
 // mobile layout for subpages
@@ -31,7 +32,7 @@ function Mobile(props: SubPageProps) {
           src={props.image}
           width={300}
           height={200}
-          className="max-h-[300px] max-w-[70vw] h-auto w-auto"
+          className="h-auto max-h-[300px] w-auto max-w-[70vw]"
           alt="Doorklik afbeelding"
         />
         <h1 className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
@@ -72,7 +73,9 @@ function Desktop(props: SubPageProps) {
           {/* responsive vertical column for content */}
           <div
             className="min-w-[200px] flex-grow"
-            style={{ maxWidth: props.wide ? "unset" : "600px" }}
+            style={{
+              maxWidth: props.wide ? props.maxWidth || "unset" : "600px",
+            }}
           >
             <div className="w-min bg-primary">
               <h1 className="w-max p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
