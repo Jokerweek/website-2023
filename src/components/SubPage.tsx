@@ -9,6 +9,9 @@ type SubPageProps = {
   image: string;
   children: React.ReactNode;
   back?: string;
+  wide?: boolean;
+  ml?: number;
+  maxWidth?: string;
 };
 
 // mobile layout for subpages
@@ -16,20 +19,20 @@ function Mobile(props: SubPageProps) {
   const { back = "home" } = props;
   return (
     <>
+      {/* back button */}
+      <IconButton
+        href={back}
+        style={{ position: "fixed", top: "0px", left: "0px" }}
+      >
+        <ArrowBackIcon />
+      </IconButton>
       {/* baground image | horizontal centering of everything */}
       <div className="flex w-[100%] flex-col items-center gap-6 bg-paper bg-contain bg-repeat p-10">
-        <IconButton
-          href={back}
-          style={{ position: "fixed", top: "0px", left: "0px" }}
-        >
-          <ArrowBackIcon />
-        </IconButton>
-
         <Image
           src={props.image}
           width={300}
           height={200}
-          className="max-w-[70vw]"
+          className="h-auto max-h-[300px] w-auto max-w-[70vw]"
           alt="Doorklik afbeelding"
         />
         <h1 className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
@@ -55,7 +58,10 @@ function Desktop(props: SubPageProps) {
   return (
     <>
       {/* baground image*/}
-      <div className="w-[100%] bg-paper bg-contain bg-repeat p-10">
+      <div
+        className="w-[100%] bg-paper bg-contain bg-repeat p-10"
+        style={{ paddingLeft: `${40 + (props.ml || 0)}px` }}
+      >
         <IconButton
           href="home"
           style={{ position: "fixed", top: "0px", left: "0px" }}
@@ -65,7 +71,12 @@ function Desktop(props: SubPageProps) {
         {/* responsive horizontal layout */}
         <div className="flex justify-center gap-10">
           {/* responsive vertical column for content */}
-          <div className="min-w-[200px] max-w-[600px] flex-grow">
+          <div
+            className="min-w-[200px] flex-grow"
+            style={{
+              maxWidth: props.wide ? props.maxWidth || "unset" : "600px",
+            }}
+          >
             <div className="w-min bg-primary">
               <h1 className="w-max p-4 pb-2 font-title text-3xl tracking-widest text-secondary">
                 {props.title}

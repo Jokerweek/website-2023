@@ -16,7 +16,10 @@ const subTitleFont = localFont({
 });
 
 const bodyFont = localFont({
-  src: [{ path: "../styles/fonts/HelveticaNeueLight.otf" }],
+  src: [
+    { path: "../styles/fonts/HelveticaNeueLight.otf" },
+    { path: "../styles/fonts/Helvetica CE Bold Oblique.otf", style: "italic" },
+  ],
   variable: "--font-body",
 });
 
