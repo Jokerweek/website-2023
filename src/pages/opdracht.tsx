@@ -364,16 +364,16 @@ export default function Opdracht() {
           boxShadow: "none",
           backgroundColor: "transparent",
         }}
-        className="border border-dashed"
       >
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+        <div className="absolute h-12 w-full -translate-x-4 -translate-y-2 rounded-sm border border-dashed" />
           <h2 className="font-subTitle text-2xl tracking-normal text-primary">
             OPDRACHT
           </h2>
         </AccordionSummary>
 
-        <AccordionDetails className="-mt-4 p-2">
-          <h3 className="font-subTitle text-xl tracking-normal">DRAGER</h3>
+        <AccordionDetails className="-mt-4 -mx-4 p-2">
+          <h3 className="font-subTitle text-xl tracking-normal mt-3">DRAGER</h3>
           Elke groep studenten krijgt een stadsfragment of ‘puzzelstuk’ op de
           kaart van Gent toegewezen. Dit puzzelstuk is deel van de grote drager
           en output van de Jokerweek. De groepsindeling vinden jullie{" "}
