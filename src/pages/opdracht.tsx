@@ -46,11 +46,15 @@ export default function Opdracht() {
     </>,
   ];
   const headRows = [
-    <p className="ml-2 font-subTitle tracking-normal">DRAGER</p>,
+    <>
+      <p className="ml-2 font-subTitle tracking-normal">DRAGER</p>
+    </>,
     "Voormiddag",
     "Middag",
     "Namiddag",
-    <p className="ml-2 font-subTitle tracking-normal">REGARD</p>,
+    <>
+      <p className="ml-2 font-subTitle tracking-normal">REGARD</p>
+    </>,
     "deadline +discussie",
     "18u: Avondlezing",
   ];
@@ -82,7 +86,7 @@ export default function Opdracht() {
       copy of calendar for grid
       ---------------------------- 
       */}
-      <hr className="my-3"/>
+      <hr className="my-3" />
       <div className="relative w-full overflow-x-auto">
         {/* grid of the calendar */}
         <div className="mb-1 grid grid-cols-[75px,_repeat(5,220px)] text-xs">

@@ -1,10 +1,9 @@
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ReplayIcon from "@mui/icons-material/Replay";
 import { IconButton } from "@mui/material";
 import Image from "next/image";
 import { Footer, Pin } from "~/components";
 import { useBreakpoint } from "~/hooks";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Mobile() {
   return (
