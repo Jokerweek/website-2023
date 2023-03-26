@@ -32,7 +32,7 @@ export default function Footer() {
         </ul>
         <ul className="list-square">
           <h3 className="font-subTitle tracking-normal">Externe links</h3>
-          <Ref href="/" title="Radio" />
+          <Ref href="https://www.mixcloud.com/jokerweek2023/" title="Radio" />
           <Ref href="https://jw-database-code.vercel.app/" title="Bib" />
         </ul>
         <ul className="list-square">
