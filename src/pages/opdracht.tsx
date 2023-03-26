@@ -2,7 +2,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
-import { SubPage } from "~/components";
+import { EventLink, SubPage } from "~/components";
 import groups from "~/components/groups.json";
 // { title: [names], title: [names], ...}
 
@@ -147,14 +147,18 @@ export default function Opdracht() {
           </div>
           <div className="col-span-full row-start-2 bg-black-100 opacity-10" />
 
-          <div className="col-start-2 row-start-3 flex flex-col justify-center p-1">
+          <a
+            href="lezingen"
+            className="relative col-start-2 row-start-3 flex flex-col justify-center p-1"
+          >
             10u start:
             <br /> Introductie jokerweek thema en opdracht
             <br /> <br />
             <p className="font-subTitle tracking-normal">
               11u: Introlezing Ciel Grommen
             </p>
-          </div>
+            <EventLink icon="link" />
+          </a>
           <div className="col-start-3 row-start-3 flex flex-col justify-center p-1">
             10u start:
             <br /> iedere groep krijgt tags toegewezen uit de bib
@@ -180,22 +184,34 @@ export default function Opdracht() {
             Uitwerking finale output
           </div>
 
-          <div className="col-start-3 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal">
+          <a
+            href="lezingen"
+            className="relative col-start-3 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal"
+          >
             13u - 14u:
             <br />
             PANELGESPREK koloniaal erfgoed
-          </div>
-          <div className="col-start-4 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            <EventLink icon="link" top />
+          </a>
+          <a
+            href="lezingen"
+            className="relative col-start-4 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal"
+          >
             13u - 14u:
             <br />
             PANELGESPREK gender in architectuur
-          </div>
-          <div className="col-start-5 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            <EventLink icon="link" top />
+          </a>
+          <a
+            href="lezingen"
+            className="relative col-start-5 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal"
+          >
             13u - 14u:
             <br />
             Participatie - event rond Plateau
             <br /> 1 afgevaardigde per groep
-          </div>
+            <EventLink icon="link" top />
+          </a>
 
           <div className="col-start-2 row-start-5 flex flex-col justify-center p-1">
             Toewijzing puzzelstuk per weekgroep
@@ -292,19 +308,38 @@ export default function Opdracht() {
             <br /> Samenleggen alle puzzelstukken + bespreken
           </div>
 
-          <div className="col-start-2 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+          <a
+            href="lezingen"
+            className="relative col-start-2 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal"
+          >
             Lezing Tina De Ghent
-          </div>
-          <div className="col-start-3 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            <EventLink icon="link" />
+          </a>
+          <a
+            href="lezingen"
+            className="relative col-start-3 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal"
+          >
             Lezing Samia Henni
-          </div>
-          <div className="col-start-4 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            <EventLink icon="link" />
+          </a>
+          <a
+            href="lezingen"
+            className="relative col-start-4 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal"
+          >
             Lezing Appoline Vranken
-          </div>
-          <div className="col-start-5 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            <EventLink icon="link" />
+          </a>
+          <a
+            href="lezingen"
+            className="relative col-start-5 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal"
+          >
             Debat Ruth Soenen
-          </div>
-          <div className="col-start-6 row-start-[8] flex flex-col justify-center p-1">
+            <EventLink icon="link" />
+          </a>
+          <a
+            href="lezingen"
+            className="relative col-start-6 row-start-[8] flex flex-col justify-center p-1"
+          >
             16u: Einddebat
             <p className="font-subTitle tracking-normal">
               Annelies de smet/ Elly Van Eeghem /Anne Kockelkorn/ Laure
@@ -312,7 +347,8 @@ export default function Opdracht() {
             </p>
             <br /> + reflectie op de week en onderwijs
             <br /> + eindtentoonstelling
-          </div>
+            <EventLink icon="link" />
+          </a>
         </div>
       </div>
     </SubPage>
