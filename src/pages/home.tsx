@@ -3,18 +3,10 @@ import { IconButton } from "@mui/material";
 import Image from "next/image";
 import { Footer, Pin } from "~/components";
 import { useBreakpoint } from "~/hooks";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Mobile() {
-  function handleAnim() {
-    const homeAnim = document.querySelectorAll(".animate-pop-home");
-    homeAnim.forEach((img) => {
-      img?.classList.remove("animate-pop-home");
-      setTimeout(() => {
-        img?.classList.add("animate-pop-home");
-      }, 0);
-    });
-  }
-
   return (
     <div className="relative w-[100%] overflow-x-hidden">
       <Image
@@ -24,13 +16,9 @@ function Mobile() {
         alt="logo"
         className="w-screen"
       />
-      <div className="fixed top-0 right-0 rounded-bl-3xl bg-[white] p-1">
-        <IconButton onClick={handleAnim}>
-          <ReplayIcon />
-        </IconButton>
-      </div>
 
       <Pin
+        infinite
         box={["96vw", "37.3vw", "11vw", "9vw"]}
         skew="0, 24deg"
         href="https://jw-database-code.vercel.app/"
@@ -45,6 +33,7 @@ function Mobile() {
         />
       </Pin>
       <Pin
+        infinite
         box={["112.5vw", "47vw", "11vw", "10.6vw"]}
         skew="0, 24deg"
         href="weekmenu"
@@ -59,6 +48,7 @@ function Mobile() {
         />
       </Pin>
       <Pin
+        infinite
         box={["107.5vw", "37.5vw", "11vw", "9vw"]}
         skew="0, 24deg"
         href="expo"
@@ -73,6 +63,7 @@ function Mobile() {
         />
       </Pin>
       <Pin
+        infinite
         box={["101vw", "47vw", "11vw", "10.6vw"]}
         skew="0, 24deg"
         href="opdracht"
@@ -87,6 +78,7 @@ function Mobile() {
         />
       </Pin>
       <Pin
+        infinite
         box={["117vw", "22vw", "11vw", "10.6vw"]}
         href="huisregels"
         order={5}
@@ -100,6 +92,7 @@ function Mobile() {
         />
       </Pin>
       <Pin
+        infinite
         box={["128vw", "33vw", "9.1vw", "22.6vw"]}
         skew="-60deg, 24deg"
         href="lezingen"
@@ -114,6 +107,7 @@ function Mobile() {
         />
       </Pin>
       <Pin
+        infinite
         box={["155vw", "17vw", "30vw", "30vw"]}
         skew="0deg, -35deg"
         href="randactiviteiten"
@@ -127,7 +121,12 @@ function Mobile() {
           alt="logo"
         />
       </Pin>
-      <Pin box={["111vw", "1vw", "7vw", "18vw"]} href="sponsors" order={8}>
+      <Pin
+        infinite
+        box={["111vw", "1vw", "7vw", "18vw"]}
+        href="sponsors"
+        order={8}
+      >
         <Image
           width={220}
           height={150}
@@ -136,7 +135,12 @@ function Mobile() {
           alt="logo"
         />
       </Pin>
-      <Pin box={["67vw", "58vw", "23vw", "10.6vw"]} href="radio" order={9}>
+      <Pin
+        infinite
+        box={["67vw", "58vw", "23vw", "10.6vw"]}
+        href="radio"
+        order={9}
+      >
         <Image
           width={300}
           height={150}
@@ -146,6 +150,7 @@ function Mobile() {
         />
       </Pin>
       <Pin
+        infinite
         box={["135vw", "6vw", "21vw", "17.4vw"]}
         skew="0deg, -35deg"
         href="kalender"
@@ -184,7 +189,7 @@ function Desktop() {
         className="w-screen"
       />
       <div className="fixed top-0 right-0 rounded-bl-3xl bg-[white] p-1">
-        <IconButton onClick={handleAnim}>
+        <IconButton onClick={handleAnim} sx={{ color: "#a83e1d" }}>
           <ReplayIcon />
         </IconButton>
       </div>
@@ -322,6 +327,9 @@ export default function Home() {
         <div className="w-[100%] overflow-hidden">
           <Mobile />
         </div>
+        <div className="sticky -translate-y-10 h-0 animate-arrow-home text-right text-[white]">
+          <ExpandMoreIcon sx={{ height: "50px", width: "50px" }} />
+        </div>
         <Footer />
       </>
     );
@@ -330,6 +338,9 @@ export default function Home() {
       <>
         <div className="overflow-hidden">
           <Desktop />
+        </div>
+        <div className="sticky -translate-y-10 h-0 animate-arrow-home text-right text-[white]">
+          <ExpandMoreIcon sx={{ height: "50px", width: "50px" }} />
         </div>
         <Footer />
       </>
