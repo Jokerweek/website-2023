@@ -27,27 +27,30 @@ function Group({ title, names }: GroupProps) {
 export default function Opdracht() {
   const headColumns = [
     <>
-      Maandag <p className="text-sm tracking-wider">WIJK</p>
+      Maandag <p className="font-subTitle text-[0.8rem] tracking-wide">WIJK</p>
     </>,
     <>
-      Dinsdag <p className="text-sm tracking-wider">PLEK</p>
+      Dinsdag <p className="font-subTitle text-[0.8rem] tracking-wide">PLEK</p>
     </>,
     <>
-      Woensdag <p className="text-sm tracking-wider">OBJECT</p>
+      Woensdag{" "}
+      <p className="font-subTitle text-[0.8rem] tracking-wide">OBJECT</p>
     </>,
     <>
-      Donderdag <p className="text-sm tracking-wider">TEGENHANGER</p>
+      Donderdag{" "}
+      <p className="font-subTitle text-[0.8rem] tracking-wide">TEGENHANGER</p>
     </>,
     <>
-      Vrijdag <p className="text-sm tracking-wider">SYNTHESE</p>
+      Vrijdag{" "}
+      <p className="font-subTitle text-[0.8rem] tracking-wide">SYNTHESE</p>
     </>,
   ];
   const headRows = [
-    <p className="font-subTitle tracking-normal">DRAGER</p>,
+    <p className="ml-2 font-subTitle tracking-normal">DRAGER</p>,
     "Voormiddag",
     "Middag",
     "Namiddag",
-    <p className="font-subTitle tracking-normal">REGARD</p>,
+    <p className="ml-2 font-subTitle tracking-normal">REGARD</p>,
     "deadline +discussie",
     "18u: Avondlezing",
   ];
@@ -79,10 +82,10 @@ export default function Opdracht() {
       copy of calendar for grid
       ---------------------------- 
       */}
-
-      <div className="relative h-[745px] w-full overflow-x-auto">
+      <hr className="my-3"/>
+      <div className="relative w-full overflow-x-auto">
         {/* grid of the calendar */}
-        <div className="mb-1 grid w-[565px] grid-cols-[75px,_repeat(5,200px)] text-xs">
+        <div className="mb-1 grid grid-cols-[75px,_repeat(5,220px)] text-xs">
           {/* background color top row  */}
           <div className="col-span-full col-start-2 row-start-1 bg-primary" />
           {/* top row */}
@@ -108,35 +111,198 @@ export default function Opdracht() {
             </div>
           ))}
           {/* set of vertical lines */}
-          {headColumns.slice(1).map((_, i) => (
+          {[...Array<number>(6)].slice(1).map((_, i) => (
             <div
               className="row-start-2 row-end-[9] border-l border-dashed"
-              style={{ gridColumnStart: `${i + 2}`}}
+              style={{ gridColumnStart: `${i + 2}` }}
               key={i}
             />
           ))}
-          <div className="col-start-2 row-start-2 p-1 text-xs">
+          <div className="col-start-2 row-start-2 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
             Wie maakt de wijk?
             <br /> Wie gebruikt de wijk?
           </div>
-          <div className="col-start-3 row-start-2 p-1">
+          <div className="col-start-3 row-start-2 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
             Wie maakt de plek?
             <br /> Wie gebruikt de plek?
           </div>
-          <div className="col-start-4 row-start-2 p-1">
+          <div className="col-start-4 row-start-2 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
             Wie maakt het object?
             <br /> Wie gebruikt het object?
           </div>
-          <div className="col-start-5 row-start-2 p-1">
+          <div className="col-start-5 row-start-2 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
             Zoek een tegenhanger, wat doet dit met de DRAGER?
           </div>
-          <div className="col-start-6 row-start-2 p-1">
+          <div className="col-start-6 row-start-2 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
             Hernieuwde blik op de drager.
           </div>
-          <div className="col-start-2 row-start-3 p-1">
+          <div className="col-span-full row-start-2 bg-black-100 opacity-10" />
+
+          <div className="col-start-2 row-start-3 flex flex-col justify-center p-1">
             10u start:
             <br /> Introductie jokerweek thema en opdracht
-            <p className="underline">11u: Introlezing Ciel Grommen</p>
+            <br /> <br />
+            <p className="font-subTitle tracking-normal">
+              11u: Introlezing Ciel Grommen
+            </p>
+          </div>
+          <div className="col-start-3 row-start-3 flex flex-col justify-center p-1">
+            10u start:
+            <br /> iedere groep krijgt tags toegewezen uit de bib
+            <br /> <br />
+            inlezen + gesprek binnen de weekgroep
+          </div>
+          <div className="col-start-4 row-start-3 flex flex-col justify-center p-1">
+            10u start:
+            <br /> iedere groep krijgt tags toegewezen uit de bib
+            <br /> <br />
+            inlezen + gesprek binnen de weekgroep
+          </div>
+          <div className="col-start-5 row-start-3 flex flex-col justify-center p-1">
+            10u start:
+            <br /> iedere groep krijgt tags toegewezen uit de bib
+            <br /> <br />
+            inlezen + gesprek binnen de weekgroep zoektocht naar tegenhanger
+          </div>
+          <div className="col-start-6 row-start-3 flex flex-col justify-center p-1">
+            10u start:
+            <br /> Vormen van een synthese van de afgelopen week
+            <br /> <br />
+            Uitwerking finale output
+          </div>
+
+          <div className="col-start-3 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            13u - 14u:
+            <br />
+            PANELGESPREK koloniaal erfgoed
+          </div>
+          <div className="col-start-4 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            13u - 14u:
+            <br />
+            PANELGESPREK gender in architectuur
+          </div>
+          <div className="col-start-5 row-start-4 flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            13u - 14u:
+            <br />
+            Participatie - event rond Plateau
+            <br /> 1 afgevaardigde per groep
+          </div>
+
+          <div className="col-start-2 row-start-5 flex flex-col justify-center p-1">
+            Toewijzing puzzelstuk per weekgroep
+            <br /> <br />
+            Locatie puzzelstuk leren kennen aan de hand van bezoek aan site en
+            de wijkpodcast, Gent Gemapt en de bibliotheek
+          </div>
+          <div className="col-start-3 row-start-5 flex flex-col justify-center p-1">
+            Tweede sitebezoek
+            <br /> <br />
+            Iedere weekgroep gaat op zoek naar een “plek” binnen de site
+          </div>
+          <div className="col-start-4 row-start-5 flex flex-col justify-center p-1">
+            iedere weekgroep gaat op zoek naar een “object” binnen de site
+          </div>
+          <div className="col-start-5 row-start-5 flex flex-col justify-center p-1">
+            Iedere weekgroep gaat op zoek naar een “tegenhanger” voor het
+            gekozen object/plek of de wijk.
+            <br /> <br />
+            De tegenhanger kan eender waar in de wereld gevonden worden en
+            verruimt de context waarover we nadenken.
+          </div>
+          <div className="col-start-6 row-start-5 flex flex-col justify-center p-1">
+            Afwerken van output
+            <br /> + samenleggen van alle puzzelstukken
+          </div>
+
+          <div className="col-start-2 row-start-6 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
+            Wat is jullie blik op de wijk?
+          </div>
+          <div className="col-start-3 row-start-6 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
+            Wat is jullie blik op de plek?
+          </div>
+          <div className="col-start-4 row-start-6 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
+            Wat is jullie blik op het object?
+          </div>
+          <div className="col-start-5 row-start-6 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
+            Hoe verandert jullie blik?
+          </div>
+          <div className="col-start-6 row-start-6 flex flex-col justify-center p-2 text-center font-subTitle tracking-normal">
+            Hernieuwde blik op de drager
+          </div>
+          <div className="col-span-full row-start-6 bg-black-100 opacity-10" />
+
+          <div className="col-start-2 row-start-7 flex flex-col justify-center p-1">
+            Wat is jullie blik op de wijk en welke eerste bedenkingen komen
+            daarbij naar boven?
+            <br /> <br />
+            16u:
+            <br /> Discussie met zustergroep
+            <br /> Groep confronteren met blik van de zustergroep
+            <br /> <br />
+            17u:
+            <br /> Samenleggen alle puzzelstukken + bespreken
+          </div>
+          <div className="col-start-3 row-start-7 flex flex-col justify-center p-1">
+            Wat is het conflict op bovenstaande vragen en hoe kunnen jullie dit
+            in beeld brengen op het puzzelstuk? Is jullie blik op het fragment
+            veranderd en wat droeg hiertoe bij?
+            <br /> <br />
+            16u:
+            <br /> Discussie met zustergroep
+            <br /> Groep confronteren met blik van de zustergroep
+            <br /> <br />
+            17u:
+            <br /> Samenleggen alle puzzelstukken + bespreken
+          </div>
+          <div className="col-start-4 row-start-7 flex flex-col justify-center p-1">
+            Wat is het conflict op bovenstaande vragen en hoe kunnen jullie dit
+            in beeld brengen op het puzzelstuk? Is jullie blik op het fragment
+            veranderd en wat droeg hiertoe bij?
+            <br /> <br />
+            16u:
+            <br /> Discussie met zustergroep
+            <br /> Groep confronteren met blik van de zustergroep
+            <br /> <br />
+            17u:
+            <br /> Samenleggen alle puzzelstukken + bespreken
+          </div>
+          <div className="col-start-5 row-start-7 flex flex-col justify-center p-1">
+            Hoe verandert de tegenhanger de blik op wat ontstaat er?
+            <br /> <br />
+            16u:
+            <br /> Discussie met zustergroep
+            <br /> Groep confronteren met blik van de zustergroep
+            <br /> <br />
+            17u:
+            <br /> Samenleggen alle puzzelstukken + bespreken
+          </div>
+          <div className="col-start-6 row-start-7 flex flex-col justify-center p-1">
+            Samenleggen van alle puzzelstukken Nieuwe lezing kaart Gent
+            <br /> <br />
+            15u:
+            <br /> Samenleggen alle puzzelstukken + bespreken
+          </div>
+
+          <div className="col-start-2 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            Lezing Tina De Ghent
+          </div>
+          <div className="col-start-3 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            Lezing Samia Henni
+          </div>
+          <div className="col-start-4 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            Lezing Appoline Vranken
+          </div>
+          <div className="col-start-5 row-start-[8] flex flex-col justify-center p-1 font-subTitle tracking-normal">
+            Debat Ruth Soenen
+          </div>
+          <div className="col-start-6 row-start-[8] flex flex-col justify-center p-1">
+            16u: Einddebat
+            <p className="font-subTitle tracking-normal">
+              Annelies de smet/ Elly Van Eeghem /Anne Kockelkorn/ Laure
+              Machtelinckx
+            </p>
+            <br /> + reflectie op de week en onderwijs
+            <br /> + eindtentoonstelling
           </div>
         </div>
       </div>

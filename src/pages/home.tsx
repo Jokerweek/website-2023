@@ -8,7 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Mobile() {
   return (
-    <div className="relative w-[100%] overflow-x-hidden">
+    <div className="relative w-screen overflow-x-hidden">
       <Image
         width={900}
         height={1400}
