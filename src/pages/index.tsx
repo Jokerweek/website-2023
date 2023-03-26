@@ -8,17 +8,6 @@ const Timer = dynamic(() => import("~/components/Timer"), {
 });
 
 export default function Home() {
-  function pass() {
-    const safety = prompt(
-      "Raadsel: Wie heeft deze website gemaakt? 🤔 [Voornaam]"
-    );
-    if (safety == "Philippe") {
-      window.location.href = "/home";
-    } else {
-      alert("Fout antwoord! 😥");
-    }
-  }
-
   return (
     <div className="font-subTitle tracking-normal flex min-h-screen flex-col items-center justify-end gap-6 bg-paper bg-contain bg-repeat p-5">
       <div className="flex flex-grow flex-col items-center justify-center gap-6">
