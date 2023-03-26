@@ -60,7 +60,12 @@ export default function Opdracht() {
   ];
 
   return (
-    <SubPage wide title="Opdracht" image="/images/bg/doorklik/opdracht.png">
+    <SubPage
+      wide
+      title="Opdracht"
+      image="/images/bg/doorklik/opdracht.png"
+      maxWidth="1175px"
+    >
       <Accordion
         sx={{
           boxShadow: "none",
@@ -86,7 +91,7 @@ export default function Opdracht() {
       copy of calendar for grid
       ---------------------------- 
       */}
-      <hr className="my-3" />
+      <div className="h-6" />
       <div className="relative w-full overflow-x-auto">
         {/* grid of the calendar */}
         <div className="mb-1 grid grid-cols-[75px,_repeat(5,220px)] text-xs">
