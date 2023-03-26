@@ -21,9 +21,9 @@ export default function Lezingen() {
         <br /> Works have been exhibited in C-mine Genk; Artsonje Art Centre,
         Seoul; Live In Your Head Gallery, Geneva; Z33, centre for contemporary
         art, Hasselt; Vai, Antwerp; Red Cross Museum, Geneva... Works even more
-        often appear in the "real" world, such as Petit Chateau, asylum centre
-        in Brussels, in the post box of a neighbour, on the Aldi parking lot of
-        Borgloon, at the foot of the terril of Winterslag...
+        often appear in the &quot;real&quot; world, such as Petit Chateau,
+        asylum centre in Brussels, in the post box of a neighbour, on the Aldi
+        parking lot of Borgloon, at the foot of the terril of Winterslag...
         <br />
         <br /> At this moment I am starting a PHD in the arts at LUCA school of
         arts Ghent, in the{" "}
@@ -230,44 +230,44 @@ export default function Lezingen() {
         projets pour l’asbl L’Ilot-Sortir du sans-abrisme et comme architecte.
         Avec la plateforme L’architecture qui dégenre qu’elle a fondée en 2018,
         elle est également à l’initiative de l’édition belge des Journées du
-        Matrimoine. Aujourd'hui, elle est chercheuse doctorante FRESH-FNRS au
-        sein du laboratoire Hortence de la Faculté d'architecture La
+        Matrimoine. Aujourd&apos;hui, elle est chercheuse doctorante FRESH-FNRS
+        au sein du laboratoire Hortence de la Faculté d&apos;architecture La
         Cambre-Horta ULB. Sa recherche porte sur les méthodologies d’une
         histoire de l’architecture moderne féministe à travers l’analyse du
         parcours, de l’œuvre et de l’héritage de Simone Guillissen-Hoa,
         architecte figurant parmi les premières praticiennes en Belgique.
         <br />
         <br /> Apolline Vranken is sinds 2014 betrokken bij de Cercle Féministe
-        de l'ULB en is gepassioneerd door vragen over genderverhoudingen in de
-        ruimte en stedelijke gelijkheid. Ze onderzoekt deze thema's in haar
-        eindwerk Des béguinages à l'architecture féministe dat in 2018 door de
-        Université des Femmes werd gepubliceerd. Apolline Vranken studeerde in
-        2017 af als architect en werkte meer dan twee jaar als projectleider
-        voor de vzw L'Ilot-Sortir du sans-abrime en als architect. Met het
-        platform L'architecture qui dégenre dat ze in 2018 oprichtte, is ze ook
-        initiatiefnemer van de Belgische editie van de Journées du Matrimoine.
-        Vandaag is ze FRESH-FNRS doctoraatsonderzoeker in het Hortence
-        laboratorium van de Faculteit Architectuur La Cambre-Horta ULB. Haar
-        onderzoek richt zich op de methodologieën van een feministische
-        geschiedenis van de moderne architectuur via de analyse van de carrière,
-        het werk en de nalatenschap van Simone Guillissen-Hoa, een van de eerste
-        vrouwelijke architecten in België.
+        de l&apos;ULB en is gepassioneerd door vragen over genderverhoudingen in
+        de ruimte en stedelijke gelijkheid. Ze onderzoekt deze thema&apos;s in
+        haar eindwerk Des béguinages à l&apos;architecture féministe dat in 2018
+        door de Université des Femmes werd gepubliceerd. Apolline Vranken
+        studeerde in 2017 af als architect en werkte meer dan twee jaar als
+        projectleider voor de vzw L&apos;Ilot-Sortir du sans-abrime en als
+        architect. Met het platform L&apos;architecture qui dégenre dat ze in
+        2018 oprichtte, is ze ook initiatiefnemer van de Belgische editie van de
+        Journées du Matrimoine. Vandaag is ze FRESH-FNRS doctoraatsonderzoeker
+        in het Hortence laboratorium van de Faculteit Architectuur La
+        Cambre-Horta ULB. Haar onderzoek richt zich op de methodologieën van een
+        feministische geschiedenis van de moderne architectuur via de analyse
+        van de carrière, het werk en de nalatenschap van Simone Guillissen-Hoa,
+        een van de eerste vrouwelijke architecten in België.
         <br />
         <br /> Since 2014, Apolline Vranken has been involved in the Cercle
-        Féministe de l'ULB and is passionate about questions regarding gender
-        relations in space and urban equality. She investigates these themes in
-        her final work Des béguinages à l'architecture féministe published by
-        the Université des Femmes in 2018. Apolline Vranken graduated in
-        architecture in 2017 and worked for more than two years as a project
-        manager for the non-profit organisation L'Ilot-Sortir du sans-abrime and
-        as an architect. With the platform L'architecture qui dégenre that she
-        founded in 2018, she is also the initiator of the Belgian edition of the
-        Journées du Matrimoine. Today, she is a FRESH-FNRS doctoral researcher
-        in the Hortence laboratory of the Faculty of Architecture La
-        Cambre-Horta ULB. Her research focuses on the methodologies of a
-        feminist history of modern architecture through the analysis of the
-        career, the work and the legacy of Simone Guillissen-Hoa, one of the
-        first female architects in Belgium.
+        Féministe de l&apos;ULB and is passionate about questions regarding
+        gender relations in space and urban equality. She investigates these
+        themes in her final work Des béguinages à l&apos;architecture féministe
+        published by the Université des Femmes in 2018. Apolline Vranken
+        graduated in architecture in 2017 and worked for more than two years as
+        a project manager for the non-profit organisation L&apos;Ilot-Sortir du
+        sans-abrime and as an architect. With the platform L&apos;architecture
+        qui dégenre that she founded in 2018, she is also the initiator of the
+        Belgian edition of the Journées du Matrimoine. Today, she is a
+        FRESH-FNRS doctoral researcher in the Hortence laboratory of the Faculty
+        of Architecture La Cambre-Horta ULB. Her research focuses on the
+        methodologies of a feminist history of modern architecture through the
+        analysis of the career, the work and the legacy of Simone
+        Guillissen-Hoa, one of the first female architects in Belgium.
       </Guest>
 
       <h2 className="mt-5 font-subTitle text-2xl tracking-normal text-primary ">
@@ -315,7 +315,7 @@ export default function Lezingen() {
       </h2>
       <h3 className="font-subTitle tracking-normal">
         Einddebat
-        <ul className="list-square ml-4">
+        <ul className="ml-4 list-square">
           <li>Annelies de smet</li>
           <li>Elly Van Eeghem</li>
           <li>Anne Kockelkorn</li>
