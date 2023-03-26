@@ -69,13 +69,15 @@ export function Event(props: EventProps) {
     <>
       <div style={{ display: open ? "block" : "none" }}>
         <div className="fixed  top-0 left-0 z-10 flex h-screen w-full items-center justify-center bg-black-100 bg-opacity-60">
-          <div className="relative m-5 max-h-[90vh] max-w-[500px] overflow-y-scroll bg-secondary bg-contain bg-repeat p-3 text-base">
+          <div className="relative m-5 flex max-h-[90vh] max-w-[500px] flex-col  bg-secondary bg-contain bg-repeat p-3 text-base">
             <div className="absolute top-1 right-1">
               <IconButton onClick={() => setOpen(false)}>
                 <CloseIcon />
               </IconButton>
             </div>
-            {props.popup || <p className="m-6">Reval at 12:00 😁</p>}
+            <div className="overflow-y-scroll">
+              {props.popup || <p className="m-6">Reval at 13:00 😁</p>}
+            </div>
           </div>
         </div>
       </div>

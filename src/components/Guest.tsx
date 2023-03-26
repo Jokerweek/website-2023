@@ -25,7 +25,7 @@ export default function Guest(props: GuestProps) {
       {/* popup description */}
       <div style={{ display: open ? "block" : "none" }}>
         <div className="fixed top-0 left-0 z-10 flex h-screen w-full items-center justify-center bg-black-100 bg-opacity-60">
-          <div className="relative m-5 max-h-[90vh] max-w-[700px] overflow-y-scroll bg-secondary bg-contain bg-repeat p-3 pr-10 text-base">
+          <div className="relative m-5 flex max-h-[90vh] max-w-[700px] flex-col bg-secondary bg-contain bg-repeat p-3 text-base">
             <div className="absolute top-1 right-1">
               <IconButton onClick={() => setOpen(false)}>
                 <CloseIcon />
@@ -34,7 +34,7 @@ export default function Guest(props: GuestProps) {
             <h2 className="font-subTitle text-lg tracking-normal text-primary ">
               {props.name}
             </h2>
-            {props.children}
+            <div className="overflow-y-scroll">{props.children}</div>
           </div>
         </div>
       </div>
