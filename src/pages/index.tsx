@@ -18,7 +18,7 @@ export default function Home() {
           alt="logo"
           className="mt-10 w-[300px] max-w-[min(60vw,_60vh)]"
         />
-        <Timer deadline="2023-03-27T09:30:00+01:00">
+        <Timer deadline="2023-03-27T09:30:00+02:00">
           <Link
             className="bg-primary p-4 pb-2 font-title text-3xl tracking-widest text-secondary hover:bg-black-100 hover:shadow-lg"
             href="home"
