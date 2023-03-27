@@ -551,7 +551,7 @@ export default function Kalender() {
               <br />
               NATALIA SOLANO-MEZA
               <br />
-              ELLY VAN EEGHEM
+              MÉMOIRE COLONIALE
             </p>
           </div>
         </Event>
