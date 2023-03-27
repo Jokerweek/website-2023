@@ -41,7 +41,7 @@ export default function Footer() {
             href="mailto:philippe.soubrier+jokerweek@gmail.com"
             title={
               <>
-                Probleem <br /> melden
+                Probleem melden <br/> van de website
               </>
             }
           />
