@@ -12,7 +12,7 @@ export default function Randactiviteiten() {
       <h3 className="my-1 font-subTitle text-lg tracking-normal">
         Slag om de Vlag
       </h3>
-      <Scores BA1={0} BA2={0} BA3={0} MA1={0} MA2={0} />
+      <Scores BA1={1} BA2={5} BA3={4} MA1={2} MA2={3} />
       Met vingers vol verf en doeken op de grond,
       <br /> Kwamen ze bij elkaar, jong en oud in één verbond.
       <br /> Het was tijd om iets te creëren, iets unieks en bijzonder,
