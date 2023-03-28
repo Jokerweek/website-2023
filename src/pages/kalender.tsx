@@ -111,7 +111,7 @@ export default function Kalender() {
             <div className="h-full bg-primary bg-opacity-5 p-1">
               JARENSTRIJD
               {/* locatie maandag ... */}
-            </div>            
+            </div>
           </div>
         </Event>
         <Event column={3} hours={[19.5, 20.5]}>
@@ -169,19 +169,19 @@ export default function Kalender() {
           icon="pop-up"
           iconColor="#a83e1d"
           top
-         popup={
-             <>
-               <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
+          popup={
+            <>
+              <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
                 Gevonden!
-               </h4>
+              </h4>
               De eerste verstopplek van Geeraard is gevonden! Casa Rosa is het
-               Oost-Vlaams Regenbooghuis, een locatie waar holebi’s, transgender
-               personen en hun omgeving terecht kunnen. Het is een
-               ontmoetingsplaats die zich richt op alle individuen en groepen die
-               interesse hebben in en werken rond seksuele oriëntatie en
-               genderidentiteit.
-             </>
-           }
+              Oost-Vlaams Regenbooghuis, een locatie waar holebi’s, transgender
+              personen en hun omgeving terecht kunnen. Het is een
+              ontmoetingsplaats die zich richt op alle individuen en groepen die
+              interesse hebben in en werken rond seksuele oriëntatie en
+              genderidentiteit.
+            </>
+          }
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
@@ -446,7 +446,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={2}
           colSpan={2}
           hours={[18, 19.5]}
@@ -460,7 +460,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={4}
           colSpan={2}
           hours={[18, 19.5]}
@@ -474,7 +474,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={6}
           colSpan={2}
           hours={[18, 19.5]}
@@ -488,7 +488,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={8}
           colSpan={2}
           hours={[18, 19.5]}
@@ -502,7 +502,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={10}
           colSpan={2}
           hours={[16, 18]}
@@ -522,7 +522,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={2}
           colSpan={2}
           hours={[11, 12.5]}
@@ -536,7 +536,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={4}
           colSpan={2}
           hours={[13, 14.5]}
@@ -556,7 +556,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={6}
           colSpan={2}
           hours={[13, 14.5]}
@@ -576,7 +576,7 @@ export default function Kalender() {
           </div>
         </Event>
         <Event
-        href="lezingen"
+          href="lezingen"
           column={8}
           colSpan={2}
           hours={[13, 15.5]}

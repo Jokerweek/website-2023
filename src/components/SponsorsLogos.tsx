@@ -31,11 +31,16 @@ export default function SponsorsLogos() {
   };
 
   return (
-    <div className="flex flex-wrap gap-3 justify-center items-center">
+    <div className="flex flex-wrap items-center justify-center gap-3">
       <Image alt="logo" height={50} width={120} src={logos.xerius} />
       <Image alt="logo" height={50} width={50} src={logos.koe} />
       <Image alt="logo" height={50} width={80} src={logos.carrieres} />
-      <Image alt="logo" height={50} width={40} src={logos.WWF} />
+      <div>
+        <Image alt="logo" height={50} width={160} src={logos.WWF} />
+        <p className="-my-1 text-center text-[10px] text-primary">
+          institutionele partner
+        </p>
+      </div>
       <Image alt="logo" height={50} width={40} src={logos.bostoen} />
       <Image alt="logo" height={50} width={80} src={logos.tenerga} />
       <Image alt="logo" height={50} width={80} src={logos.renson} />
