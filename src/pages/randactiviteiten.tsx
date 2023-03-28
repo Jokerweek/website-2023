@@ -73,11 +73,11 @@ export default function Randactiviteiten() {
         Dinsdag
       </h4>
       ...
-      {/* De eerste verstopplek van Geeraard is gevonden! Casa Rosa is het
+       De eerste verstopplek van Geeraard is gevonden! Casa Rosa is het
       Oost-Vlaams Regenbooghuis, een locatie waar holebi’s, transgender personen
       en hun omgeving terecht kunnen. Het is een ontmoetingsplaats die zich
       richt op alle individuen en groepen die interesse hebben in en werken rond
-      seksuele oriëntatie en genderidentiteit. */}
+      seksuele oriëntatie en genderidentiteit.
       <h4 className="mt-2 mb-1 font-subTitle text-lg tracking-normal">
         Woensdag
       </h4>
