@@ -169,19 +169,19 @@ export default function Kalender() {
           icon="pop-up"
           iconColor="#a83e1d"
           top
-          // popup={
-          //   <>
-          //     <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
-          //       Gevonden!
-          //     </h4>
-          //     De eerste verstopplek van Geeraard is gevonden! Casa Rosa is het
-          //     Oost-Vlaams Regenbooghuis, een locatie waar holebi’s, transgender
-          //     personen en hun omgeving terecht kunnen. Het is een
-          //     ontmoetingsplaats die zich richt op alle individuen en groepen die
-          //     interesse hebben in en werken rond seksuele oriëntatie en
-          //     genderidentiteit.
-          //   </>
-          // }
+         popup={
+             <>
+               <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
+                Gevonden!
+               </h4>
+              De eerste verstopplek van Geeraard is gevonden! Casa Rosa is het
+               Oost-Vlaams Regenbooghuis, een locatie waar holebi’s, transgender
+               personen en hun omgeving terecht kunnen. Het is een
+               ontmoetingsplaats die zich richt op alle individuen en groepen die
+               interesse hebben in en werken rond seksuele oriëntatie en
+               genderidentiteit.
+             </>
+           }
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
