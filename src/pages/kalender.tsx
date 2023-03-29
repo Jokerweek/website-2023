@@ -268,18 +268,18 @@ export default function Kalender() {
           icon="pop-up"
           iconColor="#a83e1d"
           top
-          // popup={
-          //   <>
-          //     <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
-          //       Gevonden!
-          //     </h4>
-          //     Vandaag werd Geraard gevonden aan het Charles de L’Epéeplein. De
-          //     Franse abt was een pionier in de behandeling van doven en
-          //     slechthorenden, waarbij hij onderzoek deed naar bruikbare
-          //     gebarentaal. Daarnaast pleitte hij voor de gelijke rechten van
-          //     doven en slechthorenden.
-          //   </>
-          // }
+          popup={
+            <>
+              <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
+                Gevonden!
+              </h4>
+              Vandaag werd Geraard gevonden aan het Charles de L’Epéeplein. De
+              Franse abt was een pionier in de behandeling van doven en
+              slechthorenden, waarbij hij onderzoek deed naar bruikbare
+              gebarentaal. Daarnaast pleitte hij voor de gelijke rechten van
+              doven en slechthorenden.
+            </>
+          }
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>

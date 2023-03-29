@@ -81,10 +81,10 @@ export default function Randactiviteiten() {
         Woensdag
       </h4>
       ...
-      {/* Vandaag werd Geraard gevonden aan het Charles de L’Epéeplein. De Franse
+      Vandaag werd Geraard gevonden aan het Charles de L’Epéeplein. De Franse
       abt was een pionier in de behandeling van doven en slechthorenden, waarbij
       hij onderzoek deed naar bruikbare gebarentaal. Daarnaast pleitte hij voor
-      de gelijke rechten van doven en slechthorenden. */}
+      de gelijke rechten van doven en slechthorenden.
       <h4 className="mt-2 mb-1 font-subTitle text-lg tracking-normal">
         Donderdag
       </h4>
