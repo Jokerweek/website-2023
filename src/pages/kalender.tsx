@@ -361,18 +361,18 @@ export default function Kalender() {
           icon="pop-up"
           iconColor="#a83e1d"
           top
-          // popup={
-          //   <>
-          //     <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
-          //       Gevonden!
-          //     </h4>
-          //     Als derde locatie is Geeraard terug te vinden aan de Eyüp Sultan
-          //     Camii moskee. De moskee is volledig gefinancierd door giften
-          //     afkomstig uit de Turkse gemeenschap van Gent en werd in 1978
-          //     officieel geopend. Van meet af aan geldt de plek niet enkel als
-          //     gebedshuis, maar ook als ontmoetingsplek voor de gemeenschap.
-          //   </>
-          // }
+           popup={
+             <>
+               <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
+                 Gevonden!
+               </h4>
+               Als derde locatie is Geeraard terug te vinden aan de Eyüp Sultan
+               Camii moskee. De moskee is volledig gefinancierd door giften
+               afkomstig uit de Turkse gemeenschap van Gent en werd in 1978
+               officieel geopend. Van meet af aan geldt de plek niet enkel als
+               gebedshuis, maar ook als ontmoetingsplek voor de gemeenschap.
+             </>
+           }
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
