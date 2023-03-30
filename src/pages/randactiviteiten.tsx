@@ -89,11 +89,11 @@ export default function Randactiviteiten() {
         Donderdag
       </h4>
       ...
-      {/* Als derde locatie is Geeraard terug te vinden aan de Eyüp Sultan Camii
+      Als derde locatie is Geeraard terug te vinden aan de Eyüp Sultan Camii
       moskee. De moskee is volledig gefinancierd door giften afkomstig uit de
       Turkse gemeenschap van Gent en werd in 1978 officieel geopend. Van meet af
       aan geldt de plek niet enkel als gebedshuis, maar ook als ontmoetingsplek
-      voor de gemeenschap. */}
+      voor de gemeenschap.
       <h4 className="mt-2 mb-1 font-subTitle text-lg tracking-normal">
         Vrijdag
       </h4>
