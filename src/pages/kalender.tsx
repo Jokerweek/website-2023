@@ -68,14 +68,22 @@ export default function Kalender() {
             <p className="text-right">KAAT & ROBBY</p>
           </div>
         </Event>
-        <Event column={10} colSpan={2} hours={[22, 26.5]}>
+        <Event column={10} colSpan={2} hours={[20, 22]}>
+          <div className="flex h-full flex-col justify-between bg-black-100 bg-opacity-10 p-1 pb-[2px] font-subTitle text-primary">
+            <p>FEEST</p>
+            <p className="text-right">TAPE</p>
+            <p className="text-right">LINX</p>
+            <br />
+          </div>
+        </Event>
+        <Event column={10} colSpan={2} hours={[23, 26.5]}>
           <div className="flex h-full flex-col justify-between bg-black-100 bg-opacity-10 p-1 pb-[2px] font-subTitle text-primary">
             <p>EINDFEEST</p>
+            <p>THE COVER</p>
             <p className="text-right">la koca</p>
             <p className="text-right">JO-RIZZ</p>
             <p className="text-right">C-RIEL & FERRE</p>
             <p className="text-right">B-KE</p>
-            <div className="h-14" />
             <p className="text-right">TOT 05:00</p>
           </div>
         </Event>
