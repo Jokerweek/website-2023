@@ -98,11 +98,11 @@ export default function Randactiviteiten() {
         Vrijdag
       </h4>
       ...
-      {/* Voor de laatste keer heeft Geeraard zich verstopt aan Dok-Zuid. Op deze
+      Voor de laatste keer heeft Geeraard zich verstopt aan Dok-Zuid. Op deze
       locatie is een werkplaats-kringloopcentrum gelegen, waar spullen
       ingezameld worden en opnieuw verkocht worden. Het is een sociaal
       tewerkstellingsproject waar mensen werkervaring kunnen opdoen, maar ook
-      hulpverlening en milieu staan centraal in de visie. */}
+      hulpverlening en milieu staan centraal in de visie.
     </SubPage>
   );
 }
