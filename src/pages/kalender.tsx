@@ -408,19 +408,19 @@ export default function Kalender() {
           icon="pop-up"
           iconColor="#a83e1d"
           top
-          // popup={
-          //   <>
-          //     <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
-          //       Gevonden!
-          //     </h4>
-          //     Voor de laatste keer heeft Geeraard zich verstopt aan Dok-Zuid. Op
-          //     deze locatie is een werkplaats-kringloopcentrum gelegen, waar
-          //     spullen ingezameld worden en opnieuw verkocht worden. Het is een
-          //     sociaal tewerkstellingsproject waar mensen werkervaring kunnen
-          //     opdoen, maar ook hulpverlening en milieu staan centraal in de
-          //     visie.
-          //   </>
-          // }
+          popup={
+          <>
+          <h4 className="my-2 font-subTitle text-xl tracking-normal text-primary">
+          Gevonden!
+          </h4>
+          Voor de laatste keer heeft Geeraard zich verstopt aan Dok-Zuid. Op
+          deze locatie is een werkplaats-kringloopcentrum gelegen, waar
+          spullen ingezameld worden en opnieuw verkocht worden. Het is een
+          sociaal tewerkstellingsproject waar mensen werkervaring kunnen
+          opdoen, maar ook hulpverlening en milieu staan centraal in de
+          visie.
+          </>
+          }
         >
           <div className="h-full bg-secondary bg-opacity-70 font-subTitle italic text-primary">
             <div className="h-full bg-primary bg-opacity-5 p-1">ZOEKSPEL</div>
