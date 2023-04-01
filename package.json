@@ -11,8 +11,10 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@garvae/react-waving-flag": "^1.0.9",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.12",
+    "@vercel/analytics": "^0.1.11",
     "next": "^13.2.1",
     "react": "18.2.0",
     "react-countdown": "^2.3.5",
