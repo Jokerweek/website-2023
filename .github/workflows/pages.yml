@@ -8,8 +8,9 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["main"]
-  paths:
+    branches:
+      - "main"
+    paths:
       - "docs/**"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
