@@ -33,7 +33,7 @@ jobs:
         run: |
           cd docs
           bundle install
-          bundle exec jekyll build --baseurl "${{ github.repository }}"
+          bundle exec jekyll build --baseurl "Jokerweek/website-2023"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
